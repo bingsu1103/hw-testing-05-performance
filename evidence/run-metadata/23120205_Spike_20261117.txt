@@ -1,0 +1,12 @@
+scenario=Spike
+plan=/Users/ngogiaan1103/Documents/ChatGPT/hw-testing-05/test-plans/23120205_Spike_20261117.jmx
+plan_sha256=c8e364d550416643f1fecb1e73904a098ceae078f2fe70cb050bbfb9aae812ca
+test_assets_commit=818f5eb495495bc5c6d37f20abe8418ea7f7f436
+sut_commit=85af3ba875c88283615e22cb108f13e2fccaf0e9
+hostname=my-mac
+timezone=+07
+started_at=2026-11-17T15:32:41+07:00
+jmeter_version=5.6.3
+java_version=openjdk version "25.0.5" 2026-10-20 LTS
+database_reset=git restore backend/database.sqlite
+finished_at=2026-11-17T15:33:13+07:00

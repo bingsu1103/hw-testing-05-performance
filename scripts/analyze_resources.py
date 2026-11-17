@@ -35,6 +35,15 @@ def main() -> int:
             f"{max(cpu):.2f}% | {statistics.fmean(rss) / 1024:.2f} MiB | "
             f"{max(rss) / 1024:.2f} MiB |"
         )
+    print("\n### RSS stability check\n")
+    print("| Process | First 20 samples | Last 20 samples | Change |")
+    print("|---|---:|---:|---:|")
+    window = min(20, len(rows))
+    for process in ("backend", "jmeter"):
+        rss = numeric(rows, f"{process}_rss_kb")
+        first = statistics.fmean(rss[:window]) / 1024
+        last = statistics.fmean(rss[-window:]) / 1024
+        print(f"| {process.title()} | {first:.2f} MiB | {last:.2f} MiB | {last - first:+.2f} MiB |")
     return 0
 
 

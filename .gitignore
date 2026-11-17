@@ -3,11 +3,25 @@ results/*.jtl
 results/*.log
 reports/*
 !reports/.gitkeep
+!results/23120205_Load_20261117.jtl
+!results/23120205_Load_20261117.log
+!results/23120205_Stress_20261117.jtl
+!results/23120205_Stress_20261117.log
+!results/23120205_Spike_20261117.jtl
+!results/23120205_Spike_20261117.log
+!results/23120205_Soak_20261117.jtl
+!results/23120205_Soak_20261117.log
+!reports/23120205_Load_20261117/
+!reports/23120205_Stress_20261117/
+!reports/23120205_Spike_20261117/
+!reports/23120205_Soak_20261117/
 
 # Screenshots and videos are collected manually during real runs.
 evidence/screenshots/*
 !evidence/screenshots/.gitkeep
+!evidence/screenshots/23120205_*_evidence.png
 evidence/discarded/
+jmeter.log
 
 # Local SUT/runtime files.
 sut/

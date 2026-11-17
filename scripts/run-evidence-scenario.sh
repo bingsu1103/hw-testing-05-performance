@@ -69,7 +69,7 @@ curl --fail --silent --max-time 2 http://localhost:3000/api/products >/dev/null
   echo "hostname=$(hostname)"
   echo "timezone=$(date +%Z)"
   echo "started_at=$(date -Iseconds)"
-  echo "jmeter_version=$(jmeter --version 2>&1 | tail -1)"
+  echo "jmeter_version=$(jmeter --version 2>&1 | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+' | tail -1)"
   echo "java_version=$(java -version 2>&1 | head -1)"
   echo "database_reset=git restore backend/database.sqlite"
 } > "$metadata"
