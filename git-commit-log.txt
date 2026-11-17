@@ -1,3 +1,10 @@
+8406f76 | 2026-11-17T16:16:18+07:00 | bingsu | docs: publish issue references and prepare submission package
+599cdc1 | 2026-11-17T16:06:16+07:00 | bingsu | docs: complete measured performance report and PDF
+56edc82 | 2026-11-17T16:06:02+07:00 | bingsu | test: add measured performance evidence and issue reproductions
+818f5eb | 2026-11-17T15:24:43+07:00 | bingsu | fix: remove blank CSV record found by load execution
+7b6ff36 | 2026-11-17T15:21:43+07:00 | bingsu | fix: prevent CSV header reuse during sustained tests
+65d07d9 | 2026-11-17T15:18:02+07:00 | bingsu | feat: add reusable JMeter evidence agent skill
+adb6038 | 2026-11-17T15:02:20+07:00 | bingsu | chore: export staged implementation commit log
 7b54b71 | 2026-11-17T15:02:04+07:00 | bingsu | test: verify all JMeter plans against the SUT
 d7dc6a8 | 2026-11-17T14:38:14+07:00 | bingsu | feat: add JTL analysis reporting and performance gate
 71b5930 | 2026-11-17T14:25:14+07:00 | bingsu | feat: add data-driven JMeter performance scenarios

@@ -33,3 +33,6 @@ __pycache__/
 # Temporary PDF inspection files.
 tmp/
 
+# Locally generated submission archives are deliverables, not repository source.
+submission/*.zip
+
