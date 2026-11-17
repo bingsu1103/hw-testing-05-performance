@@ -1,0 +1,4 @@
+interface:
+  display_name: "JMeter Performance Evidence"
+  short_description: "Run and audit reproducible JMeter performance tests"
+  default_prompt: "Use this skill to plan, run, validate, and report a JMeter performance scenario with attributable evidence."
