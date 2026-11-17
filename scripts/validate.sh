@@ -41,5 +41,7 @@ for endpoint in "${endpoints[@]}"; do
 done
 
 shellcheck scripts/*.sh
-echo "Static validation passed for 4 JMeter plans, CSV data, endpoint coverage, and shell scripts."
+python3 -m py_compile scripts/analyze_jtl.py tests/test_analyze_jtl.py
+python3 -m unittest discover -s tests -v
+echo "Static validation passed for 4 JMeter plans, CSV data, endpoint coverage, scripts, and analyzer tests."
 

@@ -12,6 +12,8 @@ evidence/screenshots/*
 sut/
 *.pid
 .DS_Store
+__pycache__/
+*.pyc
 
 # Temporary PDF inspection files.
 tmp/
