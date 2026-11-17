@@ -1,0 +1,5 @@
+email,password,search,product_id,product_name,product_price,quantity,total_amount,shipping_address
+test@eshop.com,Test1234!,Laptop,1,Laptop Dell XPS 13,25000000,1,25000000,"123 Le Loi, Quan 1, TP.HCM"
+test@eshop.com,Test1234!,Phone,2,iPhone 15 Pro,28990000,1,28990000,"456 Nguyen Hue, Quan 1, TP.HCM"
+test@eshop.com,Test1234!,Headphone,3,Sony WH-1000XM5,8490000,1,8490000,"789 Vo Van Tan, Quan 3, TP.HCM"
+
