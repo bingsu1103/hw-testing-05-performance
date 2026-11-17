@@ -12,6 +12,8 @@ Every virtual-user iteration executes the same business journey:
 
 CSV rows parameterize credentials, search terms, product values, quantities, totals, and shipping addresses. A uniform 0.5-2.0 second timer applies between requests to avoid an unrealistically tight loop.
 
+The CSV variable list is declared explicitly while `ignoreFirstLine=true`. This is required because a blank variable list can make JMeter infer names from the first row but later recycle that header as data, producing periodic invalid credentials and unresolved product IDs.
+
 ## Default load models
 
 | Scenario | Users | Ramp-up | Iterations/duration | Intended observation | Listener/report view |

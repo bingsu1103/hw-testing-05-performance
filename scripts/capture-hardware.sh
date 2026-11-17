@@ -10,7 +10,7 @@ output="${repo_dir}/evidence/hardware-spec.txt"
   echo
   sw_vers
   echo
-  system_profiler SPHardwareDataType
+  system_profiler SPHardwareDataType | sed -E '/Serial Number|Hardware UUID|Provisioning UDID/d'
 } > "$output"
 
 echo "Hardware specification saved to $output"

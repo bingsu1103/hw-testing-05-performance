@@ -1,0 +1,21 @@
+Captured at: 2026-11-17T15:19:12+07:00
+Hostname: my-mac
+
+ProductName:		macOS
+ProductVersion:		26.6
+BuildVersion:		25G72
+
+Hardware:
+
+    Hardware Overview:
+
+      Model Name: MacBook Air
+      Model Identifier: Mac14,2
+      Model Number: MLY33SA/A
+      Chip: Apple M2
+      Total Number of Cores: 8 (4 Performance and 4 Efficiency)
+      Memory: 8 GB
+      System Firmware Version: 18000.161.9
+      OS Loader Version: 18000.161.9
+      Activation Lock Status: Enabled
+
