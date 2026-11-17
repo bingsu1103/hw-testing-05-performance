@@ -105,13 +105,13 @@ The verified endurance threshold is **at least 19.08 req/s at 25 concurrent user
 
 From a clean database, an item priced 25,000,000 VND was added, checkout submitted `total_amount=1`, and the persisted order was read. The server returned success and stored `total_amount=1`, violating FR-08 and compromising integrity. Sanitized evidence is in `evidence/issues/checkout-client-total-reproduction.txt`.
 
-GitHub Issue: `[insert after publication]`
+GitHub Issue: [#1 — Checkout trusts client-provided total_amount](https://github.com/bingsu1103/hw-testing-05-performance/issues/1)
 
 ### Lockout triggers early and lasts too long
 
 From a clean database, two incorrect passwords were followed by a correct password. The valid attempt returned HTTP 403 immediately and again after 35 seconds. FR-02 requires three failures and 30 seconds. Evidence is in `evidence/issues/login-lockout-reproduction.txt`.
 
-GitHub Issue: `[insert after publication]`
+GitHub Issue: [#2 — Login lockout triggers after two failures and exceeds 30 seconds](https://github.com/bingsu1103/hw-testing-05-performance/issues/2)
 
 Both issues were reproduced separately through public APIs; neither was inferred from a performance failure.
 

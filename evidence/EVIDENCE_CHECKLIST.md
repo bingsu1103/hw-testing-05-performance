@@ -15,7 +15,7 @@ Additional required evidence:
 - [ ] at least six minutes of unlisted video with tool and resource monitor in the same frame;
 - [ ] student's own Vietnamese narration;
 - [x] reset/recovery steps documented;
-- [ ] GitHub Issues prepared from genuine reproductions; publication pending;
+- [x] GitHub Issues published from genuine reproductions: [#1](https://github.com/bingsu1103/hw-testing-05-performance/issues/1), [#2](https://github.com/bingsu1103/hw-testing-05-performance/issues/2);
 - [x] report values independently checked against raw JTL;
 - [ ] `git-commit-log.txt` regenerated immediately before packaging.
 

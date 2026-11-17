@@ -35,6 +35,11 @@ def inline(text: str) -> str:
     text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
     text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
     text = re.sub(r"`(.+?)`", r"<font name='Courier'>\1</font>", text)
+    text = re.sub(
+        r"\[([^\]]+)\]\((https?://[^)]+)\)",
+        r"<link href='\2' color='#23628d'>\1</link>",
+        text,
+    )
     return text
 
 
@@ -46,7 +51,10 @@ def parse_table(lines: list[str], start: int, styles: dict[str, ParagraphStyle])
         index += 1
     if len(raw) >= 2 and all(set(cell) <= {"-", ":"} for cell in raw[1]):
         raw.pop(1)
-    data = [[Paragraph(inline(cell), styles["TableCell"]) for cell in row] for row in raw]
+    data = []
+    for row_index, row in enumerate(raw):
+        style = styles["TableHeader"] if row_index == 0 else styles["TableCell"]
+        data.append([Paragraph(inline(cell), style) for cell in row])
     width = 176 * mm
     columns = max(len(row) for row in data)
     table = Table(data, colWidths=[width / columns] * columns, repeatRows=1, hAlign="LEFT")
@@ -111,6 +119,10 @@ def main() -> int:
         "TableCell": ParagraphStyle(
             "TableCell", parent=base["BodyText"], fontName="Arial", fontSize=7.5,
             leading=9.5, textColor=colors.HexColor("#233746"),
+        ),
+        "TableHeader": ParagraphStyle(
+            "TableHeader", parent=base["BodyText"], fontName="Arial-Bold", fontSize=7.5,
+            leading=9.5, textColor=colors.white,
         ),
         "Caption": ParagraphStyle(
             "Caption", parent=base["BodyText"], fontName="Arial", fontSize=8,
