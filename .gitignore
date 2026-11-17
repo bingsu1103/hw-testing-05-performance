@@ -1,0 +1,18 @@
+# JMeter outputs are real execution evidence and must be generated locally.
+results/*.jtl
+results/*.log
+reports/*
+!reports/.gitkeep
+
+# Screenshots and videos are collected manually during real runs.
+evidence/screenshots/*
+!evidence/screenshots/.gitkeep
+
+# Local SUT/runtime files.
+sut/
+*.pid
+.DS_Store
+
+# Temporary PDF inspection files.
+tmp/
+
