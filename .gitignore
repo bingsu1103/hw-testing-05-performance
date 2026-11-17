@@ -7,6 +7,7 @@ reports/*
 # Screenshots and videos are collected manually during real runs.
 evidence/screenshots/*
 !evidence/screenshots/.gitkeep
+evidence/discarded/
 
 # Local SUT/runtime files.
 sut/
