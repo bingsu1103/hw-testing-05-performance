@@ -23,9 +23,22 @@ if [[ "$header" != "$expected_header" ]]; then
   exit 65
 fi
 
-grep -q 'ViewResultsFullVisualizer.*Load View - View Results Tree' test-plans/23120205_Load_20261119.jmx
-grep -q 'SummaryReport.*Stress View - Summary Report' test-plans/23120205_Stress_20261119.jmx
-grep -q 'StatVisualizer.*Spike View - Aggregate Report' test-plans/23120205_Spike_20261119.jmx
+assert_listener() {
+  local plan="$1"
+  local guiclass="$2"
+  local testname="$3"
+  local found
+
+  found="$(xmllint --xpath "boolean(//*[@guiclass='${guiclass}' and @testname='${testname}'])" "$plan")"
+  if [[ "$found" != "true" ]]; then
+    echo "Missing listener ${guiclass} / ${testname} in ${plan}" >&2
+    exit 66
+  fi
+}
+
+assert_listener test-plans/23120205_Load_20261119.jmx ViewResultsFullVisualizer "Load View - View Results Tree"
+assert_listener test-plans/23120205_Stress_20261119.jmx SummaryReport "Stress View - Summary Report"
+assert_listener test-plans/23120205_Spike_20261119.jmx StatVisualizer "Spike View - Aggregate Report"
 
 endpoints=(
   "/api/register"

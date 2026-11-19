@@ -11,9 +11,12 @@ This package is deliberately named `INCOMPLETE`. Do not rename or submit it unti
 
 ## Cannot be fabricated by an agent
 
-- Live screenshots showing JMeter and Activity Monitor in the same frame for Stress, Spike, and Soak. Load evidence is complete in `evidence/screenshots/23120205_Load_20261120_live.png`.
 - At least six minutes of the student's own Vietnamese narration, uploaded as an unlisted YouTube video.
 - End-to-end Agent Skill demonstration video link.
 - Final Moodle upload by the student.
+
+The live JMeter and Activity Monitor screenshots for Load, Stress, Spike, and
+Soak, together with the hardware screenshot, are complete under
+`evidence/screenshots/`.
 
 The repository includes `docs/VIDEO_SCRIPT_VI.md` to make recording straightforward. After adding the manual and AI-owned artifacts, reassess the grade, rename the archive to `23120205_HW05_AI_Performance_<grade>.zip`, regenerate `git-commit-log.txt`, rebuild the PDF/archive, and run `unzip -t` before submission.

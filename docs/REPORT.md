@@ -25,7 +25,9 @@ The supplied group table assigns the student **Flow 2 - Tìm kiếm + Mã giảm
 
 Step 8 is the SUT-side completion of coupon application; it does not add a separate user-facing flow. The plans use unique accounts so repeated loops do not collide with existing registrations. Search, product ID, quantity, address, coupon, and expected final amount are CSV-driven. Every request asserts HTTP 200, while extractors/assertions also verify the IDs, token, discounted total, and order ID needed by later steps.
 
-The flow-selection screenshot and its SHA-256 are recorded in `docs/FLOW_ASSIGNMENT.md`. The visible name column in that screenshot is blank, so a completed shared-table screenshot or group confirmation remains a manual submission item.
+The selected Flow 2 is recorded in `docs/FLOW_ASSIGNMENT.md`. The group uses the
+assignment table only for internal coordination, so a completed name/MSSV table
+screenshot is not included as a submission requirement.
 
 ## 2. Environment and reproducibility
 

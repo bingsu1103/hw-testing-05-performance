@@ -29,7 +29,7 @@ The same Flow 2 workflow is used by Load, Stress, Spike, and a separate 12-minut
 
 | Deliverable | Status | Location |
 |---|---|---|
-| Flow assignment and source image | Recorded; completed shared-table screenshot remains manual | `docs/FLOW_ASSIGNMENT.md` |
+| Flow assignment | Recorded; the group table is internal coordination and is not a submission artifact | `docs/FLOW_ASSIGNMENT.md` |
 | Requirement traceability | Ready | `docs/REQUIREMENTS_TRACEABILITY.md` |
 | Load/Stress/Spike/Soak plans | Complete and executed | `test-plans/` |
 | CSV test data | Complete and used in measured execution | `data/` |
@@ -39,13 +39,17 @@ The same Flow 2 workflow is used by Load, Stress, Spike, and a separate 12-minut
 | Main performance report | Complete with raw-JTL values | `docs/REPORT.md` |
 | Static and bounded contract validation | Passed | `docs/VALIDATION.md` |
 | Raw JTL and HTML reports | Complete for four measured runs | `results/`, `reports/` |
-| Resource/hardware evidence | Time series, summaries, and hardware text complete; live screenshot pending | `evidence/` |
+| Resource/hardware evidence | Time series, summaries, live screenshots, and hardware evidence complete | `evidence/` |
 | Reproduced Flow 2 GitHub issue | Published | [Issue #3](https://github.com/bingsu1103/hw-testing-05-performance/issues/3) |
 | Agent Skill | Implemented and validated; own-voice demonstration pending | `agent-skill/jmeter-performance-evidence/` |
 | Vietnamese narrated video | Script ready; own-voice recording pending | `docs/VIDEO_SCRIPT_VI.md` |
 | AI audit/report/prompts | Intentionally excluded per student instruction | not stored here |
 
-Rendered summary images are derived from the raw data and do not replace the assignment's manually required live JMeter/Activity Monitor screenshot and video.
+Rendered summary images are derived from the raw data. Separate live JMeter and
+Activity Monitor screenshots for all four scenarios are stored under
+`evidence/screenshots/`; the student's narrated video remains a separate item.
+
+Video URL (YouTube Unlisted): **TO BE ADDED BY STUDENT**
 
 ## Test summary
 
@@ -88,9 +92,9 @@ Detailed setup, safe execution order, evidence checklist, and interpretation gui
 - [x] Run Load, Stress, Spike, and Soak against a clean/restarted SUT.
 - [x] Preserve complete raw JTLs, logs, HTML reports, and resource samples.
 - [x] Publish only the Flow 2 issue reproduced through real execution.
-- [ ] Add proof that the student's name/MSSV was entered into the shared Flow 2 table.
-- [ ] Capture JMeter and Activity Monitor in the same frame for each scenario.
-- [ ] Add the matching hardware-spec screenshot.
+- [x] Record Flow 2 ownership for internal coordination; no table screenshot is required in the submission.
+- [x] Capture JMeter and Activity Monitor in the same frame for each scenario.
+- [x] Add the matching hardware-spec screenshot.
 - [ ] Record at least six minutes of the student's own Vietnamese narration and add the unlisted YouTube URL.
 - [ ] Add the manually prepared AI audit/report/prompt material outside this implementation scope.
 - [ ] Regenerate `git-commit-log.txt` and the final archive after adding all manual items.

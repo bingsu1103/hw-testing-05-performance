@@ -1,20 +1,22 @@
 # Kịch bản video demo tiếng Việt (6-8 phút)
 
-> Video cuối phải dùng chính giọng của sinh viên và hiển thị JMeter cùng Activity Monitor trong một khung hình. Không dùng giọng tổng hợp. Điền link YouTube unlisted vào README/report sau khi upload.
+> Video cuối phải dùng chính giọng của sinh viên và hiển thị JMeter cùng Activity Monitor trong một khung hình. Không dùng giọng tổng hợp. Điền link YouTube unlisted vào README sau khi upload. Không cần quay bảng phân công tên/MSSV vì nhóm chỉ dùng bảng đó để điều phối nội bộ.
 
 ## Chuẩn bị
 
-1. Mở Activity Monitor, chọn CPU/Memory và tìm `java`/`node`.
-2. Mở JMeter GUI để trình bày plan; nếu chạy lại tải thì dùng non-GUI.
-3. Mở HTML report và ảnh summary của từng scenario.
-4. Không hiển thị password, JWT, serial number hoặc Hardware UUID.
-5. Kiểm tra microphone và quay toàn màn hình.
+1. Mở Activity Monitor, chọn tab CPU và tìm `node`; đặt cửa sổ ở nửa phải màn hình.
+2. Mở JMeter GUI ở nửa trái; lần lượt dùng bốn tệp trong `test-plans/`.
+3. Mở sẵn `README.md`, `docs/REPORT.md`, Issue #3 và `agent-skill/jmeter-performance-evidence/SKILL.md`.
+4. Mở HTML report và ảnh live của từng scenario trong `evidence/screenshots/`.
+5. Không hiển thị password, JWT, serial number hoặc Hardware UUID.
+6. Kiểm tra microphone, quay toàn màn hình và nói bằng chính giọng của sinh viên.
+7. Không cần chạy lại toàn bộ 12 phút; dùng JTL/report đã lưu và ảnh live có thật để trình bày.
 
 ## 0:00-0:45 - Giới thiệu và phạm vi
 
 “Em là Ngô Gia An, MSSV 23120205. Phần em phụ trách là Flow 2 - Tìm kiếm và Mã giảm giá: đăng ký, đăng nhập, tìm kiếm, xem chi tiết, thêm giỏ, áp mã giảm giá và thanh toán. Em dùng Apache JMeter 5.6.3 trên MacBook Air M2, 8 GB RAM.”
 
-Hiển thị `docs/FLOW_ASSIGNMENT.md`, ảnh bảng phân công, commit hiện tại và bốn JMX. Nếu đã cập nhật bảng nhóm, hiển thị thêm ảnh có tên/MSSV.
+Hiển thị `README.md`, commit hiện tại và bốn JMX. Nói rõ Flow 2 là phạm vi đã thống nhất nội bộ; không cần hiển thị bảng phân công tên/MSSV.
 
 ## 0:45-2:00 - Workflow Flow 2
 
@@ -66,4 +68,6 @@ Mở `agent-skill/jmeter-performance-evidence/SKILL.md`. Giải thích skill yê
 - [ ] Giọng sinh viên nghe rõ; không lộ dữ liệu nhạy cảm.
 - [ ] Demo Agent Skill end-to-end.
 - [ ] Upload YouTube Unlisted.
-- [ ] Điền URL vào README/report, commit và đóng gói lại.
+- [ ] Thay `TO BE ADDED BY STUDENT` trong `README.md` bằng URL thật.
+- [ ] Chạy `./scripts/export-git-log.sh`, commit link, rồi chạy lại `./scripts/package-submission.sh`.
+- [ ] Kiểm tra gói bằng `unzip -t submission/23120205_HW05_AI_Performance_085_INCOMPLETE.zip`.
