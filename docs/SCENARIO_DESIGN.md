@@ -4,13 +4,16 @@
 
 Every virtual-user iteration executes the same business journey:
 
-1. `POST /api/login` - authentication-heavy step; extract and assert the JWT.
-2. `GET /api/products?search=...` - read-heavy product search.
-3. `GET /api/products/:id` - read-heavy product detail.
-4. `POST /api/cart` - authenticated transactional mutation.
-5. `POST /api/checkout` - authenticated SQLite order write.
+1. `POST /api/register` - create a unique account and extract its user ID.
+2. `POST /api/login` - authentication-heavy step; extract and assert the JWT.
+3. `GET /api/products?search=...` - read-heavy product search.
+4. `GET /api/products/:id` - read-heavy product detail.
+5. `POST /api/cart` - authenticated transactional mutation.
+6. `POST /api/apply-coupon` - apply `BIGBUY`, extract the coupon/final amount, and assert the CSV oracle.
+7. `POST /api/checkout` - authenticated SQLite order write using the discounted amount.
+8. `POST /api/coupon-usage` - persist coupon use as the final backend call made by the Checkout UI action.
 
-CSV rows parameterize credentials, search terms, product values, quantities, totals, and shipping addresses. A uniform 0.5-2.0 second timer applies between requests to avoid an unrealistically tight loop.
+This is the assigned Flow 2 (“Tìm kiếm + Mã giảm giá”). CSV rows parameterize the password, search term, product values, quantity, original total, coupon, expected discounted total, and shipping address. The plan generates a unique email from the scenario-run ID, thread number, and iteration so registration is repeatable without account collisions. A uniform 0.5-2.0 second timer applies between requests to avoid an unrealistically tight loop.
 
 The CSV variable list is declared explicitly while `ignoreFirstLine=true`, and the data file must contain no blank record. A trailing empty record was found during measured execution because it produced periodic empty credentials and unresolved product IDs when JMeter recycled the file; it was removed before the final runs.
 
@@ -40,9 +43,10 @@ For a different SUT location, add `-Jhost`, `-Jport`, and `-Jprotocol`.
 
 ## Assertions and known hazards
 
-- Each request asserts HTTP 200; login additionally asserts that a JWT was extracted.
+- Each request asserts HTTP 200. Registration, login, coupon application, and checkout also assert the extracted user ID, JWT, discounted final amount, and order ID respectively.
 - The runner checks `/api/products` before starting, avoiding a meaningless full run against a stopped backend.
-- Never use invalid credentials in the performance CSV. Three failed logins can lock an account; if this happens, stop the run, wait for/reset the lock, verify one manual login, and restart with a clean result file.
-- Checkout writes an order on every iteration. Back up or reset the demo database between scenarios so one run does not contaminate the next.
+- Never use invalid credentials in the performance CSV. Each loop logs in with the account it has just registered, avoiding shared-account lockout contamination.
+- Registration, checkout, and coupon usage write to SQLite on every iteration. Restore the tracked demo database between scenarios so one run does not contaminate the next.
+- Measured runs use the valid fixed-value `BIGBUY` coupon. `SAVE10` is reserved for a separate functional reproduction because the SUT's percentage calculation is suspected to be defective.
 - View Results Tree is required as one distinct view but is memory-heavy. Use it for GUI inspection/screenshot only; authoritative measurements come from non-GUI execution and the raw JTL.
 

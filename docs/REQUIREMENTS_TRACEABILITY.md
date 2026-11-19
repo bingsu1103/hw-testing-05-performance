@@ -4,9 +4,9 @@ Source: `2026.HW05.Performance Testing_En.pdf` and the SUT's public API specific
 
 | Requirement | Planned evidence | Repository location |
 |---|---|---|
-| One end-to-end workflow spanning auth, reads, and transactions | Login, product list/detail, cart, checkout samplers | `test-plans/*.jmx` |
+| Assigned Flow 2 spanning auth, reads, coupon, and transactions | Register, login, search/detail, cart, apply coupon, checkout samplers | `docs/FLOW_ASSIGNMENT.md`, `test-plans/*.jmx` |
 | Three plans: Load, Stress, Spike | Filename-compliant plans | `test-plans/23120205_*_20261117.jmx` |
-| CSV-driven workflow | Credentials, search/product/order values | `data/users.csv` |
+| CSV-driven workflow | Password, search/product/order values, coupon, expected final amount | `data/users.csv` |
 | Three distinct report/listener views | View Results Tree, Summary Report, Aggregate Report | Load, Stress, Spike plans respectively |
 | Realistic think time, ramp-up, and thread counts | Defaults documented with override support | JMX properties and `docs/SCENARIO_DESIGN.md` |
 | Assertions and account-lockout awareness | HTTP status/token assertions and runbook reset steps | JMX plans and `docs/RUNBOOK.md` |
@@ -23,9 +23,12 @@ Source: `2026.HW05.Performance Testing_En.pdf` and the SUT's public API specific
 
 | Step | Method and path | Expected successful response |
 |---|---|---|
+| Registration | `POST /api/register` | HTTP 200 and JSON `id` |
 | Login | `POST /api/login` | HTTP 200 and JSON `token` |
 | Product search | `GET /api/products?search=...` | HTTP 200 and JSON array |
 | Product detail | `GET /api/products/:id` | HTTP 200 and non-empty object for a valid ID |
 | Add to cart | `POST /api/cart` | HTTP 200 |
-| Checkout | `POST /api/checkout` | HTTP 200 and JSON `orderId` |
+| Apply coupon | `POST /api/apply-coupon` | HTTP 200; JSON `coupon_id` and expected `final_amount` |
+| Checkout | `POST /api/checkout` | HTTP 200 and JSON `orderId`, using extracted discounted total |
+| Record coupon use | `POST /api/coupon-usage` | HTTP 200 |
 

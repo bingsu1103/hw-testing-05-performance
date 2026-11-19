@@ -25,17 +25,17 @@ jmeter -n -t test-plans/23120205_Load_20261117.jmx \
   -l results/smoke.jtl
 ```
 
-Inspect the smoke JTL. Do not proceed if login or assertions fail.
+Inspect the smoke JTL. One loop must contain exactly eight successful labels in the Flow 2 order. Do not proceed if registration, coupon, login, or any assertion fails.
 
 ## 3. Establish clean starting state
 
 1. Stop the backend.
 2. Restore a known-good copy of the demo SQLite database or reclone the SUT.
-3. Start the backend and verify a successful login with the CSV credentials.
+3. Start the backend and verify `/api/products` responds; accounts are generated uniquely during the run.
 4. Close unrelated high-resource applications.
 5. Record the hostname and hardware with `./scripts/capture-hardware.sh`; capture the corresponding screenshot.
 
-Use the same starting-state procedure before every scenario. The backend keeps carts in memory and writes checkout orders to SQLite, so restarting only the test tool is not sufficient for comparable runs.
+Use the same starting-state procedure before every scenario. The backend keeps carts in memory and writes registered users, orders, and coupon usage to SQLite, so restarting only the test tool is not sufficient for comparable runs.
 
 ## 4. Run scenarios
 
@@ -50,7 +50,11 @@ Run in this order and allow the machine/backend to return to idle between runs:
 
 During each run, capture JMeter/terminal and Activity Monitor in the same frame. Record CPU, memory, start/end time, and any visible recovery period. Do not reuse a JTL filename.
 
-## 5. Lockout recovery
+## 5. Registration, coupon, and lockout recovery
+
+Every loop registers a unique account before login. If registration returns HTTP 500, stop the run and check whether a stale `flow2_run_id`, duplicated result execution, or an unreset database caused an email collision.
+
+If coupon application fails, confirm the row uses `BIGBUY`, the total exceeds 500,000 VND, and the database was reset so that the new user has no prior coupon usage.
 
 If login returns 401/403 repeatedly:
 
