@@ -78,7 +78,7 @@ def render(scenario: str) -> Path:
     draw = ImageDraw.Draw(image)
     draw.rectangle((0, 0, 1600, 125), fill="#12344d")
     draw.text((55, 30), f"HW05 {scenario} - measured evidence", font=font(40, True), fill="white")
-    draw.text((55, 82), "Ngô Gia An - 23120205 | 2026-11-17 ICT | raw JTL + 2-second process samples", font=font(20), fill="#d6e6f2")
+    draw.text((55, 82), "Ngô Gia An - 23120205 | 2026-11-19 ICT | raw JTL + 2-second process samples", font=font(20), fill="#d6e6f2")
 
     cards = [
         ("Samples", f"{overall.samples:,}"),

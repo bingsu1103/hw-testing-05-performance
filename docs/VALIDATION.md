@@ -1,34 +1,48 @@
 # Implementation validation
 
-Validation date: **2026-11-17 (Asia/Ho_Chi_Minh)**
+Validation date: **2026-11-19 (Asia/Ho_Chi_Minh)**
 
 ## Static validation
 
 `./scripts/validate.sh` passed with:
 
-- four well-formed JMX files;
-- required endpoint coverage in every plan;
-- distinct Load/Stress/Spike listeners;
-- expected CSV schema;
-- ShellCheck for runner/setup/evidence scripts;
-- Python compilation and four unit tests for the JTL analyzer.
+- four well-formed JMX files dated `20261119`;
+- the exact eight-call Flow 2 sequence in every plan;
+- state extraction/reuse for user ID, JWT, coupon ID, final amount, and order ID;
+- distinct Load/Stress/Spike listener types;
+- the expected Flow 2 CSV schema;
+- ShellCheck and Python compilation;
+- seven passing unit/contract tests.
 
-## Contract smoke tests
+The negative gate unit test intentionally prints a p95 failure while the test itself passes by confirming that the analyzer rejects the threshold violation.
 
-Apache JMeter 5.6.3 and the public `ttbhanh/eshop-sut` backend were used for bounded smoke execution. Each plan was overridden to one virtual user and one iteration; the soak duration was also bounded. All four plans loaded successfully and each completed the five-request journey with zero assertion/request errors:
+## Contract smoke test
 
-| Plan | Samples | Errors | Contract result |
-|---|---:|---:|---|
-| Load | 5 | 0 | Pass |
-| Stress | 5 | 0 | Pass |
-| Spike | 5 | 0 | Pass |
-| Soak | 5 | 0 | Pass |
+Apache JMeter 5.6.3 and the checked-out `ttbhanh/eshop-sut` backend were used for a bounded one-user, one-iteration smoke execution before measured load. The run produced eight samples and zero request/assertion errors, covering:
 
-The first sandboxed attempt could not open a localhost socket and produced `Operation not permitted`; it was discarded as infrastructure failure. The repeated run with localhost permission passed. This distinction prevents an environment restriction from being reported as a SUT defect.
+1. registration and user ID extraction;
+2. login and JWT extraction;
+3. product search and detail;
+4. authenticated cart mutation;
+5. coupon application and final-amount assertion;
+6. checkout with the extracted final amount;
+7. coupon-usage recording.
 
-The smoke run also verified that login returned a token, product list/detail requests succeeded, the authenticated cart request succeeded, and checkout returned success. It led to one correction: Thread Group display names now interpolate effective property values so overridden runs do not misleadingly display default concurrency.
+This was only a contract check; its latency and throughput are not reported as Load/Stress/Spike/Soak findings.
 
-## Evidence limitation
+## Measured-run validation
 
-These are contract smoke tests only. Their latency/throughput values are not valid Load/Stress/Spike/Soak findings because the plans were deliberately overridden to one user and one iteration. Full runs still require simultaneous resource monitoring, screenshots, clean database state, and the student's narrated video. Raw smoke artifacts remain Git-ignored to avoid mixing them with submission evidence.
+All four final runs were generated from a restored database and preserved with JTL, JMeter log, HTML report, run metadata, and two-second resource samples.
 
+| Plan | Samples | Errors | p95 | Result |
+|---|---:|---:|---:|---|
+| Load | 800 | 0 | 8 ms | Pass |
+| Stress | 6,400 | 0 | 6 ms | Pass |
+| Spike | 3,600 | 0 | 39 ms | Pass |
+| Soak | 13,696 | 0 | 7 ms | Pass |
+
+For every JTL, `scripts/analyze_jtl.py` passed an error-rate gate of 0% and a p95 ceiling of 2,500 ms. Raw line counts match the reported sample counts plus one CSV header. Each corresponding HTML report contains `index.html`.
+
+## Honest evidence boundary
+
+Rendered summary images are derived from raw JTL/resource CSV files and are labeled as such. They do not replace the live JMeter/Activity Monitor screenshots or the student's own narrated Agent Skill demonstration. The AI audit, AI report, and prompt log also remain outside this implementation scope.

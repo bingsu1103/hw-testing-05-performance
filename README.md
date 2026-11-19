@@ -1,47 +1,60 @@
 # HW05 - Performance Testing
 
-Student: **Ngô Gia An**  
-Student ID: **23120205**  
-System under test: [ttbhanh/eshop-sut](https://github.com/ttbhanh/eshop-sut)  
+Student: **Ngô Gia An**
+
+Student ID: **23120205**
+
+Assigned workflow: **Flow 2 - Tìm kiếm + Mã giảm giá**
+
+System under test: [ttbhanh/eshop-sut](https://github.com/ttbhanh/eshop-sut)
+
 Public homework repository: [bingsu1103/hw-testing-05-performance](https://github.com/bingsu1103/hw-testing-05-performance)
+
 Backend base URL: `http://localhost:3000`
 
-This repository contains reproducible JMeter assets for an end-to-end workflow:
+Every scenario executes the same CSV-driven journey:
 
-1. authenticate with `POST /api/login`;
-2. list/search and inspect products with `GET /api/products` and `GET /api/products/:id`;
-3. add an item with `POST /api/cart`;
-4. create an order with `POST /api/checkout`.
+1. register a unique user;
+2. log in and extract the JWT;
+3. search for a product;
+4. view its detail;
+5. add it to the cart;
+6. apply a discount code and extract the final amount;
+7. checkout with that amount;
+8. record coupon usage, completing the SUT-side coupon flow.
 
-The same workflow is used by Load, Stress, and Spike scenarios. Inputs are read from CSV. A separate 12-minute soak plan is included to determine the local machine's endurance threshold.
+The same Flow 2 workflow is used by Load, Stress, Spike, and a separate 12-minute Soak plan. The measured workload uses the deterministic fixed-value `BIGBUY` coupon; the defective percentage coupon `SAVE10` is reproduced separately in Issue #3.
 
 ## Repository status
 
 | Deliverable | Status | Location |
 |---|---|---|
+| Flow assignment and source image | Recorded; completed shared-table screenshot remains manual | `docs/FLOW_ASSIGNMENT.md` |
 | Requirement traceability | Ready | `docs/REQUIREMENTS_TRACEABILITY.md` |
-| Load/Stress/Spike plans | Complete and executed | `test-plans/` |
-| CSV test data | Complete and reviewed during measured execution | `data/` |
+| Load/Stress/Spike/Soak plans | Complete and executed | `test-plans/` |
+| CSV test data | Complete and used in measured execution | `data/` |
 | Run and validation scripts | Ready | `scripts/` |
 | JTL analyzer and performance gates | Ready | `scripts/analyze_jtl.py` |
 | Continuous performance proposal | Ready | `docs/CONTINUOUS_PERFORMANCE_TESTING.md` |
 | Main performance report | Complete with raw-JTL values | `docs/REPORT.md` |
 | Static and bounded contract validation | Passed | `docs/VALIDATION.md` |
 | Raw JTL and HTML reports | Complete for four measured runs | `results/`, `reports/` |
-| Resource/hardware evidence | Time series, summary images, hardware text complete; live screenshot pending | `evidence/` |
-| Reproduced GitHub issues | Published | [Issue #1](https://github.com/bingsu1103/hw-testing-05-performance/issues/1), [Issue #2](https://github.com/bingsu1103/hw-testing-05-performance/issues/2) |
+| Resource/hardware evidence | Time series, summaries, and hardware text complete; live screenshot pending | `evidence/` |
+| Reproduced Flow 2 GitHub issue | Published | [Issue #3](https://github.com/bingsu1103/hw-testing-05-performance/issues/3) |
+| Agent Skill | Implemented and validated; own-voice demonstration pending | `agent-skill/jmeter-performance-evidence/` |
 | Vietnamese narrated video | Script ready; own-voice recording pending | `docs/VIDEO_SCRIPT_VI.md` |
 | AI audit/report/prompts | Intentionally excluded per student instruction | not stored here |
 
-Final metrics are derived from raw JTLs produced on the recorded student machine. Rendered summary images are clearly labeled and do not replace the manually required live Activity Monitor screenshot/video.
+Rendered summary images are derived from the raw data and do not replace the assignment's manually required live JMeter/Activity Monitor screenshot and video.
 
 ## Test summary
 
-- Scenarios executed: Load, Stress, Spike, and a 12-minute Soak test.
-- Endpoint groups: auth-heavy login, read-heavy product listing/detail, and transactional cart/checkout.
-- Measured endurance point: 25 virtual users sustaining 19.08 requests/second for 12 minutes, 0.00% errors, p95 7 ms, p99 26 ms, backend RSS at or below 51.53 MiB. This is a demonstrated stable point, not an absolute maximum.
-- Genuine bugs reported: 2 ([checkout integrity](https://github.com/bingsu1103/hw-testing-05-performance/issues/1), [login lockout](https://github.com/bingsu1103/hw-testing-05-performance/issues/2)).
-- Demo video: pending the student's own Vietnamese narration and unlisted YouTube upload.
+- Load: 800 samples, 0 errors, 7.56 req/s, p95 8 ms.
+- Stress: 6,400 samples, 0 errors, 28.84 req/s, p95 6 ms.
+- Spike: 3,600 samples, 0 errors, 94.22 req/s, p95 39 ms.
+- Soak: 13,696 samples, 0 errors, 19.06 req/s for 12 minutes, p95 7 ms, p99 22 ms, backend RSS peak 59.36 MiB.
+- Genuine Flow 2 bug: [SAVE10 percentage coupon inflates checkout total tenfold](https://github.com/bingsu1103/hw-testing-05-performance/issues/3).
+- Demonstrated endurance point: at least 19.06 req/s at 25 users for 12 minutes; this is not an absolute maximum.
 
 ## Self-assessment
 
@@ -67,18 +80,17 @@ Prerequisites: Java 17+ and Apache JMeter 5.6.x.
 ./scripts/run-scenario.sh soak
 ```
 
-Detailed setup, safe execution order, evidence checklist, and result interpretation are in `docs/RUNBOOK.md`.
+Detailed setup, safe execution order, evidence checklist, and interpretation guidance are in `docs/RUNBOOK.md`.
 
 ## Submission checklist
 
-- [x] Run all three scenarios and the soak test against a clean/restarted SUT.
-- [x] Keep the complete raw `.jtl` files and HTML report folders.
+- [x] Implement and validate the assigned Flow 2 sequence.
+- [x] Run Load, Stress, Spike, and Soak against a clean/restarted SUT.
+- [x] Preserve complete raw JTLs, logs, HTML reports, and resource samples.
+- [x] Publish only the Flow 2 issue reproduced through real execution.
+- [ ] Add proof that the student's name/MSSV was entered into the shared Flow 2 table.
 - [ ] Capture JMeter and Activity Monitor in the same frame for each scenario.
-- [x] Capture the hardware specification and matching hostname in text; add the required screenshot manually.
-- [x] Reset/wait out the login lockout if an invalid-credential test triggers it.
-- [ ] Record at least six minutes of Vietnamese narration and add the unlisted YouTube URL.
-- [x] Create GitHub Issues only for issues reproduced by real execution.
-- [x] Fill the measured values and self-assessment in the final report.
-- [ ] Generate `git-commit-log.txt` with `./scripts/export-git-log.sh` immediately before packaging.
+- [ ] Add the matching hardware-spec screenshot.
+- [ ] Record at least six minutes of the student's own Vietnamese narration and add the unlisted YouTube URL.
 - [ ] Add the manually prepared AI audit/report/prompt material outside this implementation scope.
-
+- [ ] Regenerate `git-commit-log.txt` and the final archive after adding all manual items.

@@ -5,56 +5,65 @@
 ## Chuẩn bị
 
 1. Mở Activity Monitor, chọn CPU/Memory và tìm `java`/`node`.
-2. Mở JMeter GUI để trình bày plan; chạy tải bằng non-GUI.
-3. Mở HTML report và ảnh summary từng scenario.
+2. Mở JMeter GUI để trình bày plan; nếu chạy lại tải thì dùng non-GUI.
+3. Mở HTML report và ảnh summary của từng scenario.
 4. Không hiển thị password, JWT, serial number hoặc Hardware UUID.
 5. Kiểm tra microphone và quay toàn màn hình.
 
-## 0:00-0:45 - Giới thiệu
+## 0:00-0:45 - Giới thiệu và phạm vi
 
-“Em là Ngô Gia An, MSSV 23120205. Đây là HW05 Performance Testing trên EShop. Em dùng Apache JMeter 5.6.3 trên MacBook Air M2, 8 GB RAM. Video trình bày workflow, cách chạy, resource monitoring và kết quả Load, Stress, Spike, Soak.”
+“Em là Ngô Gia An, MSSV 23120205. Phần em phụ trách là Flow 2 - Tìm kiếm và Mã giảm giá: đăng ký, đăng nhập, tìm kiếm, xem chi tiết, thêm giỏ, áp mã giảm giá và thanh toán. Em dùng Apache JMeter 5.6.3 trên MacBook Air M2, 8 GB RAM.”
 
-Hiển thị README, hardware spec, commit hiện tại và bốn JMX.
+Hiển thị `docs/FLOW_ASSIGNMENT.md`, ảnh bảng phân công, commit hiện tại và bốn JMX. Nếu đã cập nhật bảng nhóm, hiển thị thêm ảnh có tên/MSSV.
 
-## 0:45-2:00 - Workflow
+## 0:45-2:00 - Workflow Flow 2
 
-Trong JMeter, lần lượt chỉ vào CSV Data Set, Login/JWT extractor, Product Search/Detail, Cart, Checkout, assertions và random think time. Giải thích ba endpoint group và ba listener khác nhau: View Results Tree, Summary Report, Aggregate Report.
+Trong JMeter, chỉ lần lượt tám sampler: Register, Login, Search Products, Product Detail, Add to Cart, Apply Coupon, Checkout và Record Coupon Usage. Giải thích:
 
-## 2:00-3:00 - Human review
+- tài khoản duy nhất theo thread/iteration tránh trùng đăng ký;
+- JWT, coupon ID, final amount và order ID được trích xuất để truyền giữa các bước;
+- Checkout dùng đúng `final_amount` từ Apply Coupon;
+- CSV dùng `BIGBUY` để kết quả đo ổn định;
+- Load, Stress, Spike dùng ba listener khác nhau theo yêu cầu.
 
-“Run Load đầu có khoảng 15-16% lỗi. Em không kết luận SUT lỗi ngay mà kiểm tra raw JTL. Credential và product ID bị rỗng theo chu kỳ. Nguyên nhân cuối cùng là CSV có dòng rỗng cuối file. Em lưu run INVALID, xóa dòng, smoke 8 vòng được 40/40 sample pass rồi mới chạy full.”
+## 2:00-2:45 - Human review và smoke test
 
-Hiển thị các commit sửa CSV và phần Human review trong report.
+“Phiên bản cũ là flow mua hàng login-first nên thiếu đăng ký và áp mã. Em viết contract test yêu cầu đúng Flow 2, tạo lại bốn plan, rồi smoke một user một vòng. Smoke có đủ tám request và không lỗi trước khi chạy full.”
 
-## 3:00-4:30 - Load, Stress, Spike
+Hiển thị commit sửa scope, test `tests/test_flow2_scope.py` và kết quả validate.
 
-- Load: 500 sample, 0 lỗi, 5.79 req/s, p95 19 ms.
-- Stress: 4,000 sample, 0 lỗi, 22.06 req/s, p95 11 ms.
-- Spike: 2,250 sample, 0 lỗi, 84.82 req/s, p95 15 ms.
+## 2:45-4:15 - Load, Stress, Spike
 
-Nói rõ Spike là burst throughput, không phải endurance threshold. Chỉ vào CPU/RSS backend và JMeter.
+- Load: 800 mẫu, 0 lỗi, 7.56 req/s, p95 8 ms.
+- Stress: 6.400 mẫu, 0 lỗi, 28.84 req/s, p95 6 ms.
+- Spike: 3.600 mẫu, 0 lỗi, 94.22 req/s, p95 39 ms.
 
-## 4:30-5:30 - Soak
+Nói rõ checkout là label nhạy nhất trong Spike với p95 172 ms và max 449 ms. Spike là burst throughput, không phải endurance threshold. Chỉ vào raw JTL, HTML report và CPU/RSS của backend/JMeter.
 
-- 12 phút, 13,701 sample, 0 lỗi;
-- 19.08 req/s;
-- p95 7 ms, p99 26 ms;
-- backend RSS peak 51.53 MiB.
+## 4:15-5:15 - Soak
 
-“Kết luận là phần cứng đã ổn định ít nhất ở 19.08 req/s trong 12 phút. Đây không phải maximum tuyệt đối vì test không tăng tải từng bước đến khi lỗi.”
+- 12 phút, 13.696 mẫu, 0 lỗi;
+- 19.06 req/s;
+- p95 7 ms, p99 22 ms;
+- backend RSS peak 59.36 MiB.
 
-## 5:30-6:30 - Bugs và CI
+“Có một excursion ngắn với max 2.285 ms khoảng phút 7-8, nhưng cửa sổ 30 giây kế tiếp trở lại khoảng 20 req/s, max 27-71 ms và vẫn 0 lỗi. Vì vậy kết luận an toàn là hệ thống ổn định ít nhất ở 19.06 req/s trong 12 phút, không phải maximum tuyệt đối.”
 
-Trình bày hai reproduction: checkout lưu `total_amount=1` dù cart giá 25,000,000; account khóa sau hai lần sai và vẫn khóa sau 35 giây. Sau đó mở flow chart continuous testing: change filter → smoke → fixed runner → load gate → p95/error comparison → controlled rerun → nightly Stress/weekly Spike+Soak.
+## 5:15-6:15 - Bug mã phần trăm và CI
 
-## 6:30-7:15 - Agent Skill và kết luận
+Mở Issue #3 và evidence. Nói: “SAVE10 có type percent, discount value 10. Với giỏ 30 triệu, đúng ra còn 27 triệu. API lại trả final amount 300 triệu và discount âm 270 triệu, phù hợp với lỗi coi số 10 là hệ số thay vì 10 phần trăm.”
 
-Mở `agent-skill/jmeter-performance-evidence/SKILL.md`. Giải thích skill bắt buộc clean state, raw JTL, resource evidence, phân loại infrastructure failure và không bịa dữ liệu. Kết luận ưu tiên server-side total recalculation, sau đó sửa lockout.
+Sau đó mở flow chart continuous testing: change filter → smoke → fixed runner → Load gate → p95/error comparison → controlled rerun → nightly Stress/weekly Spike+Soak.
+
+## 6:15-7:15 - Agent Skill và kết luận
+
+Mở `agent-skill/jmeter-performance-evidence/SKILL.md`. Giải thích skill yêu cầu clean state, smoke trước measured run, lưu raw JTL/resource evidence, phân biệt infrastructure failure với SUT defect và không bịa dữ liệu. Kết luận ưu tiên sửa phép tính percentage coupon, bổ sung test cho cả fixed/percent, rồi chạy step-load để tìm capacity.
 
 ## Sau khi quay
 
 - [ ] Video dài ít nhất 6 phút.
 - [ ] JMeter và Activity Monitor cùng khung.
 - [ ] Giọng sinh viên nghe rõ; không lộ dữ liệu nhạy cảm.
+- [ ] Demo Agent Skill end-to-end.
 - [ ] Upload YouTube Unlisted.
 - [ ] Điền URL vào README/report, commit và đóng gói lại.
