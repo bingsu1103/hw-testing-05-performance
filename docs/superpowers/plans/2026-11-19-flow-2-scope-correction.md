@@ -39,11 +39,11 @@
 **Interfaces:**
 - Produces: exact ordered sampler names/paths and CSV header required by every later task.
 
-- [ ] Write tests asserting the Flow 2 CSV columns and ordered JMX endpoints.
-- [ ] Run the tests and observe failure because registration and coupon steps are absent.
-- [ ] Add assignment documentation and the supplied coordination screenshot.
-- [ ] Extend the repository validator to run the new scope tests.
-- [ ] Commit the scope contract.
+- [x] Write tests asserting the Flow 2 CSV columns and ordered JMX endpoints.
+- [x] Run the tests and observe failure because registration and coupon steps are absent.
+- [x] Add assignment documentation and the supplied coordination screenshot.
+- [x] Extend the repository validator to run the new scope tests.
+- [x] Commit the scope contract.
 
 ### Task 2: Implement data-driven Flow 2 JMeter plans
 
@@ -61,12 +61,12 @@
 - Consumes: Task 1 ordered sequence and CSV schema.
 - Produces: four executable JMX files with `flow_email`, `user_id`, `auth_token`, `coupon_id`, `final_amount`, and `order_id` variables.
 
-- [ ] Update CSV with real seeded products and the `BIGBUY` fixed coupon.
-- [ ] Add unique-email generation and registration to each plan.
-- [ ] Add coupon application, extraction, assertions, discounted checkout, and coupon-usage recording.
-- [ ] Run the scope tests and full static validator until green.
-- [ ] Run a bounded smoke execution from a clean database and inspect all labels.
-- [ ] Commit the corrected plans and documentation.
+- [x] Update CSV with real seeded products and the `BIGBUY` fixed coupon.
+- [x] Add unique-email generation and registration to each plan.
+- [x] Add coupon application, extraction, assertions, discounted checkout, and coupon-usage recording.
+- [x] Run the scope tests and full static validator until green.
+- [x] Run a bounded smoke execution from a clean database and inspect all labels.
+- [x] Commit the corrected plans and documentation.
 
 ### Task 3: Replace stale Flow 1 evidence with real Flow 2 execution
 
@@ -80,11 +80,11 @@
 - Consumes: Task 2 plans.
 - Produces: measured Flow 2 evidence for Load, Stress, Spike, and Soak.
 
-- [ ] Move stale Flow 1 evidence out of primary paths through a committed deletion.
-- [ ] Execute Load, Stress, Spike, and 10–15 minute Soak from clean SUT state.
-- [ ] Analyze every JTL and confirm label/sample/error counts.
-- [ ] Render summary evidence from the new analyses.
-- [ ] Commit only real Flow 2 outputs.
+- [x] Move stale Flow 1 evidence out of primary paths through a committed deletion.
+- [x] Execute Load, Stress, Spike, and 10–15 minute Soak from clean SUT state.
+- [x] Analyze every JTL and confirm label/sample/error counts.
+- [x] Render summary evidence from the new analyses.
+- [x] Commit only real Flow 2 outputs.
 
 ### Task 4: Reproduce and publish a Flow 2 issue
 
@@ -96,11 +96,11 @@
 **Interfaces:**
 - Produces: sanitized reproduction and public issue URL for the percent-coupon defect, if confirmed.
 
-- [ ] Reproduce `SAVE10` from a clean database with a newly registered user.
-- [ ] Compare returned discount/final values with the seeded 10% intent.
-- [ ] Prepare a sanitized issue body and publish it to the homework repository.
-- [ ] Exclude old out-of-scope issues from the main report while retaining GitHub history.
-- [ ] Commit the Flow 2 defect evidence.
+- [x] Reproduce `SAVE10` from a clean database with a newly registered user.
+- [x] Compare returned discount/final values with the seeded 10% intent.
+- [x] Prepare a sanitized issue body and publish it to the homework repository.
+- [x] Exclude old out-of-scope issues from the main report while retaining GitHub history.
+- [x] Commit the Flow 2 defect evidence.
 
 ### Task 5: Rebuild report, package, and repository history
 
@@ -117,9 +117,9 @@
 - Consumes: Tasks 1–4.
 - Produces: a consistent Flow 2 report and incomplete package that still reserves the manual/AI-owned items.
 
-- [ ] Recompute every reported metric from the new JTL files.
-- [ ] Remove Flow 1 wording, counts, screenshots, and issue links from current deliverables.
-- [ ] Rebuild and visually inspect the PDF.
+- [x] Recompute every reported metric from the new JTL files.
+- [x] Remove Flow 1 wording, counts, screenshots, and issue links from current deliverables.
+- [x] Rebuild and visually inspect the PDF.
 - [ ] Regenerate the commit log and incomplete ZIP.
 - [ ] Run validators, skill validation, JTL gates, PDF checks, ZIP integrity, and Git status checks.
 - [ ] Commit and push the corrected staged history.
