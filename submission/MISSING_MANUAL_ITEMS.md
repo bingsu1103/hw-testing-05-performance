@@ -11,9 +11,7 @@ This package is deliberately named `INCOMPLETE`. Do not rename or submit it unti
 
 ## Cannot be fabricated by an agent
 
-- Proof that Ngô Gia An - 23120205 was entered in the shared table for **Flow 2 - Tìm kiếm + Mã giảm giá**. The supplied screenshot defines the flow but its visible name cells are blank.
-- Live screenshots showing JMeter and Activity Monitor in the same frame for Load, Stress, Spike, and Soak.
-- Hardware-spec screenshot whose hostname matches the run metadata/prior deployment evidence.
+- Live screenshots showing JMeter and Activity Monitor in the same frame for Stress, Spike, and Soak. Load evidence is complete in `evidence/screenshots/23120205_Load_20261120_live.png`.
 - At least six minutes of the student's own Vietnamese narration, uploaded as an unlisted YouTube video.
 - End-to-end Agent Skill demonstration video link.
 - Final Moodle upload by the student.

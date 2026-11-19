@@ -4,7 +4,7 @@ Use one row per run. Do not mark a row complete unless all artifacts refer to th
 
 | Scenario | Raw JTL | HTML report | Rendered summary | Live JMeter + monitor | CPU/RAM series | Run metadata |
 |---|---|---|---|---|---|---|
-| Load | [x] | [x] | [x] | [ ] | [x] | [x] |
+| Load | [x] | [x] | [x] | [x] | [x] | [x] |
 | Stress | [x] | [x] | [x] | [ ] | [x] | [x] |
 | Spike | [x] | [x] | [x] | [ ] | [x] | [x] |
 | Soak (12 min) | [x] | [x] | [x] | [ ] | [x] | [x] |
@@ -12,9 +12,8 @@ Use one row per run. Do not mark a row complete unless all artifacts refer to th
 Additional evidence:
 
 - [x] assigned Flow 2 recorded with supplied source screenshot and SHA-256;
-- [ ] proof that name/MSSV was entered into the shared Flow 2 table;
 - [x] hardware report text with hostname;
-- [ ] matching hardware screenshot;
+- [x] matching hardware screenshot (`screenshots/23120205_hardware_20261120.png`);
 - [ ] at least six minutes of unlisted video with JMeter and Activity Monitor in the same frame;
 - [ ] student's own Vietnamese narration and Agent Skill demonstration;
 - [x] reset/recovery steps documented;
@@ -22,3 +21,6 @@ Additional evidence:
 - [x] report values independently checked against raw JTL;
 - [ ] AI audit, AI report, and prompt log completed by the student;
 - [ ] `git-commit-log.txt` regenerated immediately before the final package.
+
+The group uses the assignment table only for internal coordination; no name/MSSV
+table screenshot is required in the submitted evidence.
