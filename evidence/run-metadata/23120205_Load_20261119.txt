@@ -1,0 +1,12 @@
+scenario=Load
+plan=/Users/ngogiaan1103/Documents/ChatGPT/hw-testing-05/test-plans/23120205_Load_20261119.jmx
+plan_sha256=5c81b33e45b6710e6693413a0fdc2bf3ca5051084290cbd6ae0a0dff69a607dc
+test_assets_commit=a7cbb8347518a542f01ae5500caa7943b5bca47c
+sut_commit=85af3ba875c88283615e22cb108f13e2fccaf0e9
+hostname=my-mac
+timezone=+07
+started_at=2026-11-19T13:02:39+07:00
+jmeter_version=5.6.3
+java_version=openjdk version "25.0.5" 2026-10-20 LTS
+database_reset=git restore backend/database.sqlite
+finished_at=2026-11-19T13:04:32+07:00

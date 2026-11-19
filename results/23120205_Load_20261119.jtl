@@ -1,0 +1,801 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1795068164832,82,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,316,307,1,1,http://localhost:3000/api/register,82,0,15
+1795068165506,15,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,666,280,2,2,http://localhost:3000/api/login,15,0,0
+1795068166087,7,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,316,307,2,2,http://localhost:3000/api/register,7,0,1
+1795068166238,5,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,453,201,2,2,http://localhost:3000/api/products?search=iPhone,5,0,0
+1795068166897,8,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,666,280,2,2,http://localhost:3000/api/login,8,0,0
+1795068167606,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,480,202,2,2,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068167995,7,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,451,189,2,2,http://localhost:3000/api/products/1,6,0,0
+1795068168791,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,480,189,3,3,http://localhost:3000/api/products/2,4,0,0
+1795068169240,8,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,294,426,3,3,http://localhost:3000/api/cart,8,0,0
+1795068169379,9,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,316,307,3,3,http://localhost:3000/api/register,9,0,2
+1795068169396,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,294,433,3,3,http://localhost:3000/api/cart,4,0,0
+1795068170667,63,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,401,265,3,3,http://localhost:3000/api/apply-coupon,63,0,0
+1795068171177,6,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,666,280,3,3,http://localhost:3000/api/login,6,0,0
+1795068171396,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,401,265,4,4,http://localhost:3000/api/apply-coupon,3,0,0
+1795068171495,8,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,312,485,4,4,http://localhost:3000/api/checkout,7,0,0
+1795068171909,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,316,307,4,4,http://localhost:3000/api/register,6,0,2
+1795068172179,8,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,450,202,4,4,http://localhost:3000/api/products?search=MacBook,8,0,0
+1795068172643,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,295,384,4,4,http://localhost:3000/api/coupon-usage,5,0,0
+1795068173173,7,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,666,280,4,4,http://localhost:3000/api/login,7,0,0
+1795068173344,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,312,489,4,4,http://localhost:3000/api/checkout,5,0,0
+1795068173791,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,448,189,4,4,http://localhost:3000/api/products/3,2,0,0
+1795068174022,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,295,384,4,4,http://localhost:3000/api/coupon-usage,5,0,0
+1795068174097,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,316,307,4,4,http://localhost:3000/api/register,3,0,1
+1795068174243,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,453,201,4,4,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068174438,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,294,423,5,5,http://localhost:3000/api/cart,3,0,0
+1795068174636,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,316,307,5,5,http://localhost:3000/api/register,4,0,1
+1795068174865,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,451,189,5,5,http://localhost:3000/api/products/1,3,0,0
+1795068175047,6,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,666,280,5,5,http://localhost:3000/api/login,5,0,0
+1795068175334,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,666,280,5,5,http://localhost:3000/api/login,4,0,0
+1795068175445,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,401,265,5,5,http://localhost:3000/api/apply-coupon,3,0,0
+1795068175840,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,316,307,5,5,http://localhost:3000/api/register,3,0,1
+1795068176153,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,294,426,5,5,http://localhost:3000/api/cart,2,0,0
+1795068176323,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,480,202,5,5,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068176326,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,450,202,5,5,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068176684,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,312,489,5,5,http://localhost:3000/api/checkout,6,0,0
+1795068176928,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,401,265,5,5,http://localhost:3000/api/apply-coupon,3,0,0
+1795068177202,6,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,666,280,5,5,http://localhost:3000/api/login,6,0,0
+1795068177515,9,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,295,384,6,6,http://localhost:3000/api/coupon-usage,9,0,0
+1795068177801,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,448,189,6,6,http://localhost:3000/api/products/3,4,0,0
+1795068177925,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,480,189,6,6,http://localhost:3000/api/products/2,2,0,0
+1795068177944,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,453,201,6,6,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068178190,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,317,307,6,6,http://localhost:3000/api/register,6,0,1
+1795068178241,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,312,485,6,6,http://localhost:3000/api/checkout,7,0,0
+1795068178346,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,294,423,6,6,http://localhost:3000/api/cart,3,0,0
+1795068178733,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,451,189,6,6,http://localhost:3000/api/products/1,4,0,0
+1795068178950,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,294,433,6,6,http://localhost:3000/api/cart,3,0,0
+1795068179234,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,317,307,6,6,http://localhost:3000/api/register,5,0,1
+1795068179552,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,401,265,6,6,http://localhost:3000/api/apply-coupon,4,0,0
+1795068179744,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,669,280,6,6,http://localhost:3000/api/login,4,0,0
+1795068180177,8,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,295,384,6,6,http://localhost:3000/api/coupon-usage,8,0,0
+1795068180424,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,401,265,7,7,http://localhost:3000/api/apply-coupon,5,0,0
+1795068180736,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,294,426,7,7,http://localhost:3000/api/cart,3,0,0
+1795068180838,11,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,317,307,7,7,http://localhost:3000/api/register,11,0,1
+1795068180938,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,317,307,7,7,http://localhost:3000/api/register,3,0,1
+1795068181065,7,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,669,280,7,7,http://localhost:3000/api/login,7,0,0
+1795068181293,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,312,489,7,7,http://localhost:3000/api/checkout,6,0,0
+1795068181317,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,450,202,7,7,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068181574,6,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,669,280,7,7,http://localhost:3000/api/login,6,0,0
+1795068181670,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,401,265,7,7,http://localhost:3000/api/apply-coupon,3,0,0
+1795068182000,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,312,489,7,7,http://localhost:3000/api/checkout,7,0,0
+1795068182115,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,448,189,7,7,http://localhost:3000/api/products/3,1,0,0
+1795068182566,16,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,669,280,7,7,http://localhost:3000/api/login,16,0,0
+1795068182794,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,312,485,7,7,http://localhost:3000/api/checkout,7,0,0
+1795068182821,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,294,425,7,7,http://localhost:3000/api/cart,4,0,0
+1795068182860,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,480,202,7,7,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068183042,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,480,202,7,7,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068183068,11,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,295,384,7,7,http://localhost:3000/api/coupon-usage,11,0,0
+1795068183218,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,295,384,7,7,http://localhost:3000/api/coupon-usage,6,0,0
+1795068183790,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,317,307,8,8,http://localhost:3000/api/register,5,0,2
+1795068183836,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,453,201,8,8,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068183955,7,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,295,384,8,8,http://localhost:3000/api/coupon-usage,7,0,0
+1795068184157,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,317,307,8,8,http://localhost:3000/api/register,4,0,1
+1795068184427,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,480,189,8,8,http://localhost:3000/api/products/2,3,0,0
+1795068184432,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,317,307,8,8,http://localhost:3000/api/register,4,0,1
+1795068184591,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,480,189,8,8,http://localhost:3000/api/products/2,4,0,0
+1795068184660,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,669,280,8,8,http://localhost:3000/api/login,5,0,0
+1795068184741,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,401,266,8,8,http://localhost:3000/api/apply-coupon,4,0,0
+1795068184884,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,451,189,8,8,http://localhost:3000/api/products/1,3,0,0
+1795068185126,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,294,435,8,8,http://localhost:3000/api/cart,4,0,0
+1795068185128,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,317,307,8,8,http://localhost:3000/api/register,6,0,1
+1795068185172,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,480,202,8,8,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068185359,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,669,280,8,8,http://localhost:3000/api/login,5,0,0
+1795068185706,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,669,280,8,8,http://localhost:3000/api/login,2,0,0
+1795068185887,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,312,491,8,8,http://localhost:3000/api/checkout,4,0,0
+1795068186303,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,294,435,9,9,http://localhost:3000/api/cart,2,0,0
+1795068186676,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,450,202,9,9,http://localhost:3000/api/products?search=MacBook,4,0,0
+1795068186724,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,294,428,9,9,http://localhost:3000/api/cart,4,0,0
+1795068186731,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,669,280,9,9,http://localhost:3000/api/login,3,0,0
+1795068186785,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,401,266,9,9,http://localhost:3000/api/apply-coupon,4,0,0
+1795068187059,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,480,189,9,9,http://localhost:3000/api/products/2,4,0,0
+1795068187150,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,453,201,9,9,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068187388,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,401,266,9,9,http://localhost:3000/api/apply-coupon,3,0,0
+1795068187427,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,295,386,9,9,http://localhost:3000/api/coupon-usage,5,0,0
+1795068187604,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,450,202,9,9,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068187983,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,451,189,9,9,http://localhost:3000/api/products/1,4,0,0
+1795068188001,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,448,189,9,9,http://localhost:3000/api/products/3,3,0,0
+1795068188000,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,317,307,9,9,http://localhost:3000/api/register,4,0,1
+1795068188008,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,401,266,9,9,http://localhost:3000/api/apply-coupon,2,0,0
+1795068188177,2,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,317,307,9,9,http://localhost:3000/api/register,2,0,1
+1795068188363,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,448,189,9,9,http://localhost:3000/api/products/3,3,0,0
+1795068188575,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,312,491,9,9,http://localhost:3000/api/checkout,3,0,0
+1795068188709,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,294,435,9,9,http://localhost:3000/api/cart,5,0,0
+1795068188783,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,294,425,9,9,http://localhost:3000/api/cart,4,0,0
+1795068188994,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,294,425,9,9,http://localhost:3000/api/cart,3,0,0
+1795068189181,6,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,669,280,9,9,http://localhost:3000/api/login,6,0,0
+1795068189294,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,313,487,10,10,http://localhost:3000/api/checkout,6,0,0
+1795068189318,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,313,491,10,10,http://localhost:3000/api/checkout,4,0,0
+1795068189332,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,2,0,0
+1795068189491,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,294,428,10,10,http://localhost:3000/api/cart,4,0,0
+1795068189692,7,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,295,386,10,10,http://localhost:3000/api/coupon-usage,7,0,0
+1795068189716,6,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,6,0,0
+1795068189924,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,4,0,0
+1795068189940,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,669,280,10,10,http://localhost:3000/api/login,3,0,0
+1795068190099,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,317,307,10,10,http://localhost:3000/api/register,6,0,2
+1795068190222,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,295,386,10,10,http://localhost:3000/api/coupon-usage,2,0,0
+1795068190386,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,480,202,10,10,http://localhost:3000/api/products?search=Samsung,4,0,0
+1795068190798,7,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,669,280,10,10,http://localhost:3000/api/login,7,0,0
+1795068190802,9,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,317,307,10,10,http://localhost:3000/api/register,9,0,1
+1795068190908,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,317,307,10,10,http://localhost:3000/api/register,5,0,1
+1795068190928,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,313,491,10,10,http://localhost:3000/api/checkout,3,0,0
+1795068191041,11,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,295,386,10,10,http://localhost:3000/api/coupon-usage,11,0,0
+1795068191204,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,453,201,10,10,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068191316,6,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,5,0,0
+1795068191528,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,295,386,10,10,http://localhost:3000/api/coupon-usage,5,0,0
+1795068191563,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,313,491,10,10,http://localhost:3000/api/checkout,6,0,0
+1795068191595,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,317,307,10,10,http://localhost:3000/api/register,3,0,1
+1795068191914,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,313,491,10,10,http://localhost:3000/api/checkout,6,0,0
+1795068191966,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,313,487,10,10,http://localhost:3000/api/checkout,6,0,0
+1795068192107,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,480,189,10,10,http://localhost:3000/api/products/2,3,0,0
+1795068192267,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,669,280,11,11,http://localhost:3000/api/login,3,0,0
+1795068192444,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,450,202,11,11,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068192479,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,451,189,11,11,http://localhost:3000/api/products/1,3,0,0
+1795068192488,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,295,386,11,11,http://localhost:3000/api/coupon-usage,6,0,0
+1795068192667,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,669,280,11,11,http://localhost:3000/api/login,5,0,0
+1795068192763,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,669,280,11,11,http://localhost:3000/api/login,2,0,0
+1795068192993,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,295,386,11,11,http://localhost:3000/api/coupon-usage,4,0,0
+1795068193291,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,294,428,11,11,http://localhost:3000/api/cart,4,0,0
+1795068193302,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,317,307,11,11,http://localhost:3000/api/register,6,0,3
+1795068193325,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,317,310,11,11,http://localhost:3000/api/register,3,0,0
+1795068193465,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,453,201,11,11,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068193506,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,295,386,11,11,http://localhost:3000/api/coupon-usage,6,0,0
+1795068193805,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,480,202,11,11,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068193996,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,317,307,11,11,http://localhost:3000/api/register,4,0,1
+1795068194011,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,294,435,11,11,http://localhost:3000/api/cart,5,0,0
+1795068194071,2,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,317,307,11,11,http://localhost:3000/api/register,2,0,0
+1795068194318,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,448,189,11,11,http://localhost:3000/api/products/3,2,0,0
+1795068194316,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,317,307,11,11,http://localhost:3000/api/register,4,0,1
+1795068194363,1,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,669,280,11,11,http://localhost:3000/api/login,1,0,0
+1795068194504,6,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,401,266,11,11,http://localhost:3000/api/apply-coupon,6,0,0
+1795068194503,7,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,671,281,11,11,http://localhost:3000/api/login,7,0,0
+1795068194543,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,401,266,11,11,http://localhost:3000/api/apply-coupon,4,0,0
+1795068194631,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,450,202,11,11,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068194890,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,294,425,11,11,http://localhost:3000/api/cart,5,0,0
+1795068195033,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,669,280,11,11,http://localhost:3000/api/login,5,0,0
+1795068195061,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,480,189,11,11,http://localhost:3000/api/products/2,3,0,0
+1795068195281,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,451,189,12,12,http://localhost:3000/api/products/1,2,0,0
+1795068195431,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,448,189,12,12,http://localhost:3000/api/products/3,2,0,0
+1795068195460,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,453,201,12,12,http://localhost:3000/api/products?search=iPhone,1,0,0
+1795068195610,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,669,280,12,12,http://localhost:3000/api/login,2,0,0
+1795068195725,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,480,202,12,12,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068195733,1,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,669,280,12,12,http://localhost:3000/api/login,1,0,0
+1795068195782,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,313,491,12,12,http://localhost:3000/api/checkout,4,0,0
+1795068196011,8,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,317,310,12,12,http://localhost:3000/api/register,8,0,3
+1795068196062,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,453,201,12,12,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068196131,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,313,487,12,12,http://localhost:3000/api/checkout,6,0,0
+1795068196485,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,294,435,12,12,http://localhost:3000/api/cart,2,0,0
+1795068196545,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,294,428,12,12,http://localhost:3000/api/cart,4,0,0
+1795068196553,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,450,202,12,12,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068196575,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,671,281,12,12,http://localhost:3000/api/login,5,0,0
+1795068196578,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,5,0,0
+1795068196622,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,451,189,12,12,http://localhost:3000/api/products/1,1,0,0
+1795068196718,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,2,0,0
+1795068196904,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,6,0,0
+1795068197029,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,294,425,12,12,http://localhost:3000/api/cart,3,0,0
+1795068197073,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,3,0,0
+1795068197223,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,451,189,12,12,http://localhost:3000/api/products/1,4,0,0
+1795068197429,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,317,307,12,12,http://localhost:3000/api/register,4,0,1
+1795068197517,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,480,202,12,12,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068197607,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,313,491,12,12,http://localhost:3000/api/checkout,7,0,0
+1795068197657,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,480,189,12,12,http://localhost:3000/api/products/2,2,0,0
+1795068197788,1,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,1,0,0
+1795068197961,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,294,428,12,12,http://localhost:3000/api/cart,3,0,0
+1795068197957,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,669,280,12,12,http://localhost:3000/api/login,5,0,0
+1795068198139,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,3,0,0
+1795068198174,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,294,435,12,12,http://localhost:3000/api/cart,3,0,0
+1795068198207,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,317,307,12,12,http://localhost:3000/api/register,4,0,1
+1795068198380,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,450,202,13,13,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068198494,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,448,189,13,13,http://localhost:3000/api/products/3,1,0,0
+1795068198509,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,313,487,13,13,http://localhost:3000/api/checkout,4,0,0
+1795068198729,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,313,491,13,13,http://localhost:3000/api/checkout,6,0,0
+1795068198762,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,317,310,13,13,http://localhost:3000/api/register,3,0,1
+1795068198909,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,480,189,13,13,http://localhost:3000/api/products/2,3,0,0
+1795068199013,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,294,425,13,13,http://localhost:3000/api/cart,4,0,0
+1795068199188,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,294,428,13,13,http://localhost:3000/api/cart,5,0,0
+1795068199212,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,448,189,13,13,http://localhost:3000/api/products/3,2,0,0
+1795068199215,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,2,0,0
+1795068199312,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,295,386,13,13,http://localhost:3000/api/coupon-usage,6,0,0
+1795068199361,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,313,491,13,13,http://localhost:3000/api/checkout,5,0,0
+1795068199368,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,671,281,13,13,http://localhost:3000/api/login,4,0,0
+1795068199461,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,294,435,13,13,http://localhost:3000/api/cart,4,0,0
+1795068199458,10,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,295,386,13,13,http://localhost:3000/api/coupon-usage,10,0,0
+1795068199535,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,480,202,13,13,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068199575,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,295,386,13,13,http://localhost:3000/api/coupon-usage,3,0,0
+1795068199963,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,450,202,13,13,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068200051,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,669,280,13,13,http://localhost:3000/api/login,4,0,0
+1795068200118,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,4,0,0
+1795068200191,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,4,0,0
+1795068200463,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,317,307,13,13,http://localhost:3000/api/register,3,0,0
+1795068200585,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,295,386,13,13,http://localhost:3000/api/coupon-usage,3,0,0
+1795068200720,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,3,0,0
+1795068200794,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,317,307,13,13,http://localhost:3000/api/register,5,0,2
+1795068200854,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,294,425,13,13,http://localhost:3000/api/cart,4,0,0
+1795068201097,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,4,0,0
+1795068201157,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,480,189,13,13,http://localhost:3000/api/products/2,1,0,0
+1795068201166,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,669,280,13,13,http://localhost:3000/api/login,2,0,0
+1795068201168,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,313,487,13,13,http://localhost:3000/api/checkout,3,0,0
+1795068201201,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,317,307,13,13,http://localhost:3000/api/register,4,0,1
+1795068201292,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,313,491,14,14,http://localhost:3000/api/checkout,5,0,0
+1795068201468,7,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,317,307,14,14,http://localhost:3000/api/register,7,0,2
+1795068201494,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,453,201,14,14,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068201552,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,313,491,14,14,http://localhost:3000/api/checkout,5,0,0
+1795068201702,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,401,266,14,14,http://localhost:3000/api/apply-coupon,3,0,0
+1795068201744,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,313,487,14,14,http://localhost:3000/api/checkout,4,0,0
+1795068201761,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,448,189,14,14,http://localhost:3000/api/products/3,1,0,0
+1795068201892,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,5,0,0
+1795068201947,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,450,202,14,14,http://localhost:3000/api/products?search=MacBook,4,0,0
+1795068201955,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,313,491,14,14,http://localhost:3000/api/checkout,7,0,0
+1795068202010,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,669,280,14,14,http://localhost:3000/api/login,5,0,0
+1795068202161,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,317,310,14,14,http://localhost:3000/api/register,5,0,2
+1795068202255,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,6,0,0
+1795068202461,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,669,280,14,14,http://localhost:3000/api/login,4,0,0
+1795068202585,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,3,0,0
+1795068202698,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,451,189,14,14,http://localhost:3000/api/products/1,2,0,0
+1795068202700,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,294,425,14,14,http://localhost:3000/api/cart,3,0,0
+1795068202719,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,669,280,14,14,http://localhost:3000/api/login,3,0,0
+1795068202730,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,294,435,14,14,http://localhost:3000/api/cart,2,0,0
+1795068202893,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,317,307,14,14,http://localhost:3000/api/register,3,0,1
+1795068203065,7,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,7,0,0
+1795068203156,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,317,307,14,14,http://localhost:3000/api/register,6,0,2
+1795068203181,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,313,491,14,14,http://localhost:3000/api/checkout,4,0,0
+1795068203271,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,671,281,14,14,http://localhost:3000/api/login,4,0,0
+1795068203309,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,4,0,0
+1795068203379,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,401,266,14,14,http://localhost:3000/api/apply-coupon,3,0,0
+1795068203403,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,453,201,14,14,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068203435,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,448,189,14,14,http://localhost:3000/api/products/3,3,0,0
+1795068203464,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,317,307,14,14,http://localhost:3000/api/register,4,0,1
+1795068203649,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,669,280,14,14,http://localhost:3000/api/login,3,0,0
+1795068203733,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,294,428,14,14,http://localhost:3000/api/cart,2,0,0
+1795068203812,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,480,202,14,14,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068204023,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,313,491,14,14,http://localhost:3000/api/checkout,6,0,0
+1795068204222,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,401,266,14,14,http://localhost:3000/api/apply-coupon,5,0,0
+1795068204345,8,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,8,0,0
+1795068204351,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,453,201,15,15,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068204494,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,669,280,15,15,http://localhost:3000/api/login,3,0,0
+1795068204584,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,294,425,15,15,http://localhost:3000/api/cart,2,0,0
+1795068204594,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,480,202,15,15,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068204594,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068204671,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,450,202,15,15,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068204764,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,669,280,15,15,http://localhost:3000/api/login,4,0,0
+1795068204896,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,317,310,15,15,http://localhost:3000/api/register,6,0,2
+1795068204932,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,313,491,15,15,http://localhost:3000/api/checkout,6,0,0
+1795068205009,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,317,310,15,15,http://localhost:3000/api/register,6,0,1
+1795068205087,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,480,189,15,15,http://localhost:3000/api/products/2,2,0,0
+1795068205308,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,317,307,15,15,http://localhost:3000/api/register,4,0,1
+1795068205398,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,451,189,15,15,http://localhost:3000/api/products/1,3,0,0
+1795068205398,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,317,310,15,15,http://localhost:3000/api/register,4,0,1
+1795068205528,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,671,281,15,15,http://localhost:3000/api/login,3,0,0
+1795068205583,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,453,201,15,15,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068205697,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,5,0,0
+1795068205833,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,5,0,0
+1795068205891,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,294,435,15,15,http://localhost:3000/api/cart,4,0,0
+1795068205941,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,448,189,15,15,http://localhost:3000/api/products/3,3,0,0
+1795068206051,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,451,189,15,15,http://localhost:3000/api/products/1,2,0,0
+1795068206073,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,480,189,15,15,http://localhost:3000/api/products/2,3,0,0
+1795068206089,9,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,9,0,0
+1795068206285,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,669,280,15,15,http://localhost:3000/api/login,4,0,0
+1795068206350,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,294,428,15,15,http://localhost:3000/api/cart,1,0,0
+1795068206381,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,451,189,15,15,http://localhost:3000/api/products/1,1,0,0
+1795068206395,1,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,671,281,15,15,http://localhost:3000/api/login,1,0,0
+1795068206539,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,313,487,15,15,http://localhost:3000/api/checkout,6,0,0
+1795068206601,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,294,428,15,15,http://localhost:3000/api/cart,4,0,0
+1795068206633,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,313,491,15,15,http://localhost:3000/api/checkout,3,0,0
+1795068206715,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,294,425,15,15,http://localhost:3000/api/cart,1,0,0
+1795068206726,1,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,671,281,15,15,http://localhost:3000/api/login,1,0,0
+1795068206748,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,480,202,15,15,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068206894,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,317,307,15,15,http://localhost:3000/api/register,3,0,1
+1795068207010,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,453,201,15,15,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068207152,7,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,7,0,0
+1795068207321,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,480,189,16,16,http://localhost:3000/api/products/2,3,0,0
+1795068207388,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,450,202,16,16,http://localhost:3000/api/products?search=MacBook,4,0,0
+1795068207443,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,294,435,16,16,http://localhost:3000/api/cart,4,0,0
+1795068207455,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,6,0,0
+1795068207522,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,5,0,0
+1795068207635,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,3,0,0
+1795068207718,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,317,310,16,16,http://localhost:3000/api/register,4,0,2
+1795068207780,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,5,0,0
+1795068207909,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,202,16,16,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068208098,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,313,491,16,16,http://localhost:3000/api/checkout,6,0,0
+1795068208108,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,451,189,16,16,http://localhost:3000/api/products/1,2,0,0
+1795068208138,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,294,428,16,16,http://localhost:3000/api/cart,3,0,0
+1795068208290,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,313,487,16,16,http://localhost:3000/api/checkout,6,0,0
+1795068208333,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,450,202,16,16,http://localhost:3000/api/products?search=MacBook,3,0,0
+1795068208340,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,317,307,16,16,http://localhost:3000/api/register,4,0,1
+1795068208477,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,5,0,0
+1795068208524,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,671,281,16,16,http://localhost:3000/api/login,4,0,0
+1795068208558,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,669,280,16,16,http://localhost:3000/api/login,3,0,0
+1795068208580,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,317,307,16,16,http://localhost:3000/api/register,4,0,1
+1795068208843,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,294,435,16,16,http://localhost:3000/api/cart,3,0,0
+1795068208901,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,189,16,16,http://localhost:3000/api/products/2,2,0,0
+1795068208906,1,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,1,0,0
+1795068208957,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,317,310,16,16,http://localhost:3000/api/register,4,0,1
+1795068209128,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,448,189,16,16,http://localhost:3000/api/products/3,1,0,0
+1795068209180,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,294,428,16,16,http://localhost:3000/api/cart,3,0,0
+1795068209433,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,4,0,0
+1795068209465,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,669,280,16,16,http://localhost:3000/api/login,5,0,0
+1795068209498,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,313,491,16,16,http://localhost:3000/api/checkout,5,0,0
+1795068209567,9,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,313,487,16,16,http://localhost:3000/api/checkout,9,0,0
+1795068209686,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,453,201,16,16,http://localhost:3000/api/products?search=iPhone,1,0,0
+1795068209767,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068209794,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,669,280,16,16,http://localhost:3000/api/login,2,0,0
+1795068209901,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068210185,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,4,0,0
+1795068210215,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,448,189,16,16,http://localhost:3000/api/products/3,1,0,0
+1795068210313,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,401,266,17,17,http://localhost:3000/api/apply-coupon,2,0,0
+1795068210375,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,294,435,17,17,http://localhost:3000/api/cart,1,0,0
+1795068210406,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,480,202,17,17,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068210408,0,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,480,202,17,17,http://localhost:3000/api/products?search=Samsung,0,0,0
+1795068210482,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,313,491,17,17,http://localhost:3000/api/checkout,5,0,0
+1795068210483,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,317,310,17,17,http://localhost:3000/api/register,5,0,1
+1795068210570,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,313,487,17,17,http://localhost:3000/api/checkout,4,0,0
+1795068210585,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,671,281,17,17,http://localhost:3000/api/login,3,0,0
+1795068210620,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,295,386,17,17,http://localhost:3000/api/coupon-usage,4,0,0
+1795068210902,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,317,307,17,17,http://localhost:3000/api/register,4,0,1
+1795068210999,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,401,266,17,17,http://localhost:3000/api/apply-coupon,5,0,0
+1795068211011,10,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,294,425,17,17,http://localhost:3000/api/cart,10,0,0
+1795068211035,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,451,189,17,17,http://localhost:3000/api/products/1,1,0,0
+1795068211059,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,450,202,17,17,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068211151,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-1",text,true,,295,386,17,17,http://localhost:3000/api/coupon-usage,6,0,0
+1795068211200,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,480,189,16,16,http://localhost:3000/api/products/2,2,0,0
+1795068211260,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,453,201,16,16,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068211368,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,6,0,0
+1795068211425,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,317,307,16,16,http://localhost:3000/api/register,4,0,1
+1795068211477,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,669,280,16,16,http://localhost:3000/api/login,4,0,0
+1795068211493,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,317,310,16,16,http://localhost:3000/api/register,3,0,1
+1795068211626,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,480,189,16,16,http://localhost:3000/api/products/2,3,0,0
+1795068211825,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,294,428,16,16,http://localhost:3000/api/cart,1,0,0
+1795068211928,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,671,281,16,16,http://localhost:3000/api/login,4,0,0
+1795068211944,10,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,313,491,16,16,http://localhost:3000/api/checkout,10,0,0
+1795068211965,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,669,280,16,16,http://localhost:3000/api/login,2,0,0
+1795068212016,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,450,202,16,16,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068212073,15,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,294,425,16,16,http://localhost:3000/api/cart,15,0,0
+1795068212088,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,294,435,16,16,http://localhost:3000/api/cart,1,0,0
+1795068212223,9,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,313,487,16,16,http://localhost:3000/api/checkout,9,0,0
+1795068212246,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,3,0,0
+1795068212480,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,451,189,16,16,http://localhost:3000/api/products/1,2,0,0
+1795068212500,8,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,671,281,16,16,http://localhost:3000/api/login,8,0,0
+1795068212613,17,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,17,0,0
+1795068212629,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,3,0,0
+1795068212655,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,448,189,16,16,http://localhost:3000/api/products/3,4,0,0
+1795068212818,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-2",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068212874,2,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,317,307,15,15,http://localhost:3000/api/register,2,0,0
+1795068212892,2,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,313,491,15,15,http://localhost:3000/api/checkout,2,0,0
+1795068212904,1,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,317,307,15,15,http://localhost:3000/api/register,1,0,0
+1795068213111,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,480,202,15,15,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068213174,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,294,425,15,15,http://localhost:3000/api/cart,3,0,0
+1795068213175,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,448,189,15,15,http://localhost:3000/api/products/3,3,0,0
+1795068213178,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,3,0,0
+1795068213318,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,450,202,16,16,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068213378,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,294,435,16,16,http://localhost:3000/api/cart,3,0,0
+1795068213737,6,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,5,0,0
+1795068213874,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,453,201,16,16,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068213888,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,2,0,0
+1795068214036,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,2,0,0
+1795068214050,1,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,1,0,0
+1795068214077,2,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,313,487,16,16,http://localhost:3000/api/checkout,2,0,0
+1795068214095,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,317,307,16,16,http://localhost:3000/api/register,2,0,1
+1795068214119,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,313,491,16,16,http://localhost:3000/api/checkout,3,0,0
+1795068214129,0,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,480,189,16,16,http://localhost:3000/api/products/2,0,0,0
+1795068214189,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068214210,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,448,189,16,16,http://localhost:3000/api/products/3,4,0,0
+1795068214226,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,669,280,16,16,http://localhost:3000/api/login,3,0,0
+1795068214360,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,669,280,16,16,http://localhost:3000/api/login,2,0,0
+1795068214369,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,294,428,16,16,http://localhost:3000/api/cart,2,0,0
+1795068214633,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,313,491,16,16,http://localhost:3000/api/checkout,6,0,0
+1795068214819,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,294,425,16,16,http://localhost:3000/api/cart,2,0,0
+1795068214885,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,313,491,16,16,http://localhost:3000/api/checkout,3,0,0
+1795068214927,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,317,310,16,16,http://localhost:3000/api/register,3,0,1
+1795068214971,2,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,317,310,16,16,http://localhost:3000/api/register,2,0,0
+1795068215019,2,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,313,491,16,16,http://localhost:3000/api/checkout,2,0,0
+1795068215160,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,669,280,16,16,http://localhost:3000/api/login,3,0,0
+1795068215188,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,451,189,16,16,http://localhost:3000/api/products/1,2,0,0
+1795068215207,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,5,0,0
+1795068215305,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,313,491,16,16,http://localhost:3000/api/checkout,5,0,0
+1795068215394,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,480,202,16,16,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068215480,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,294,425,16,16,http://localhost:3000/api/cart,2,0,0
+1795068215733,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-3",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068215761,1,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,1,0,0
+1795068215903,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,3,0,0
+1795068215969,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,3,0,0
+1795068216035,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,294,435,15,15,http://localhost:3000/api/cart,3,0,0
+1795068216132,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,4,0,0
+1795068216160,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,317,310,15,15,http://localhost:3000/api/register,6,0,1
+1795068216164,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068216220,5,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,453,201,15,15,http://localhost:3000/api/products?search=iPhone,5,0,0
+1795068216257,7,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-4",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,7,0,0
+1795068216283,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,671,281,15,15,http://localhost:3000/api/login,4,0,0
+1795068216451,5,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,480,189,15,15,http://localhost:3000/api/products/2,5,0,0
+1795068216462,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,671,281,15,15,http://localhost:3000/api/login,5,0,0
+1795068216477,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,450,202,15,15,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068216566,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,5,0,0
+1795068216593,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,3,0,0
+1795068216667,9,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,294,428,15,15,http://localhost:3000/api/cart,9,0,0
+1795068216726,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,313,487,15,15,http://localhost:3000/api/checkout,4,0,0
+1795068217073,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,294,435,15,15,http://localhost:3000/api/cart,3,0,0
+1795068217240,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,317,310,15,15,http://localhost:3000/api/register,2,0,1
+1795068217355,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,671,281,15,15,http://localhost:3000/api/login,3,0,0
+1795068217372,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,313,491,15,15,http://localhost:3000/api/checkout,4,0,0
+1795068217416,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,2,0,0
+1795068217471,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,317,310,15,15,http://localhost:3000/api/register,4,0,1
+1795068217706,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,317,307,15,15,http://localhost:3000/api/register,5,0,1
+1795068217710,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,317,310,15,15,http://localhost:3000/api/register,3,0,0
+1795068217768,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,313,491,15,15,http://localhost:3000/api/checkout,7,0,0
+1795068217797,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,448,189,15,15,http://localhost:3000/api/products/3,3,0,0
+1795068217953,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,202,15,15,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068218107,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,671,281,15,15,http://localhost:3000/api/login,5,0,0
+1795068218155,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,451,189,15,15,http://localhost:3000/api/products/1,2,0,0
+1795068218178,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,4,0,0
+1795068218193,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,671,281,15,15,http://localhost:3000/api/login,3,0,0
+1795068218227,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,453,201,15,15,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068218355,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,3,0,0
+1795068218372,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,313,491,15,15,http://localhost:3000/api/checkout,6,0,0
+1795068218671,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068218721,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,671,281,15,15,http://localhost:3000/api/login,4,0,0
+1795068218804,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,317,310,15,15,http://localhost:3000/api/register,3,0,0
+1795068218857,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,294,425,15,15,http://localhost:3000/api/cart,4,0,0
+1795068218899,6,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,451,189,15,15,http://localhost:3000/api/products/1,6,0,0
+1795068218899,15,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,15,0,0
+1795068218955,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,669,280,15,15,http://localhost:3000/api/login,3,0,0
+1795068218970,1,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,313,491,15,15,http://localhost:3000/api/checkout,1,0,0
+1795068219189,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,317,307,15,15,http://localhost:3000/api/register,4,0,1
+1795068219277,6,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,450,202,15,15,http://localhost:3000/api/products?search=MacBook,6,0,0
+1795068219391,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,453,201,16,16,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068219444,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,294,428,16,16,http://localhost:3000/api/cart,3,0,0
+1795068219511,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,294,428,16,16,http://localhost:3000/api/cart,2,0,0
+1795068219647,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068219706,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,313,487,16,16,http://localhost:3000/api/checkout,5,0,0
+1795068219917,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,189,16,16,http://localhost:3000/api/products/2,2,0,0
+1795068219946,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,669,280,16,16,http://localhost:3000/api/login,3,0,0
+1795068219979,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,450,202,16,16,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068220107,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,671,281,16,16,http://localhost:3000/api/login,3,0,0
+1795068220110,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,453,201,16,16,http://localhost:3000/api/products?search=iPhone,1,0,0
+1795068220395,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,317,307,16,16,http://localhost:3000/api/register,3,0,1
+1795068220498,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,317,310,16,16,http://localhost:3000/api/register,3,0,1
+1795068220540,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,2,0,0
+1795068220756,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,480,202,16,16,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068220781,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068220828,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,317,310,16,16,http://localhost:3000/api/register,3,0,1
+1795068220895,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,451,189,16,16,http://localhost:3000/api/products/1,1,0,0
+1795068220896,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,480,202,16,16,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068220910,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,448,189,16,16,http://localhost:3000/api/products/3,1,0,0
+1795068221004,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,671,281,16,16,http://localhost:3000/api/login,3,0,0
+1795068221004,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,669,280,16,16,http://localhost:3000/api/login,4,0,0
+1795068221125,1,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,1,0,0
+1795068221302,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,317,307,16,16,http://localhost:3000/api/register,3,0,1
+1795068221302,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,401,266,16,16,http://localhost:3000/api/apply-coupon,3,0,0
+1795068221337,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,294,435,16,16,http://localhost:3000/api/cart,4,0,0
+1795068221336,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,6,0,0
+1795068221418,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,450,202,16,16,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068221488,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,448,189,16,16,http://localhost:3000/api/products/3,2,0,0
+1795068221819,16,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,451,189,16,16,http://localhost:3000/api/products/1,16,0,0
+1795068221914,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,450,202,16,16,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068221975,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,294,425,16,16,http://localhost:3000/api/cart,2,0,0
+1795068222002,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,671,281,16,16,http://localhost:3000/api/login,3,0,0
+1795068222030,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,313,491,16,16,http://localhost:3000/api/checkout,4,0,0
+1795068222410,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,480,189,16,16,http://localhost:3000/api/products/2,2,0,0
+1795068222570,7,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,294,428,16,16,http://localhost:3000/api/cart,7,0,0
+1795068222581,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,453,201,16,16,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068222660,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-5",text,true,,295,386,16,16,http://localhost:3000/api/coupon-usage,4,0,0
+1795068222728,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068222758,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,480,189,15,15,http://localhost:3000/api/products/2,1,0,0
+1795068222784,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,313,487,15,15,http://localhost:3000/api/checkout,5,0,0
+1795068222804,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,480,202,15,15,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068222825,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,313,487,15,15,http://localhost:3000/api/checkout,4,0,0
+1795068222927,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,448,189,15,15,http://localhost:3000/api/products/3,4,0,0
+1795068222980,7,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,317,310,15,15,http://localhost:3000/api/register,7,0,3
+1795068223126,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,669,280,15,15,http://localhost:3000/api/login,2,0,0
+1795068223403,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,294,425,15,15,http://localhost:3000/api/cart,3,0,0
+1795068223585,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,294,428,15,15,http://localhost:3000/api/cart,4,0,0
+1795068223717,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,448,189,15,15,http://localhost:3000/api/products/3,2,0,0
+1795068223726,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,671,281,15,15,http://localhost:3000/api/login,4,0,0
+1795068223728,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,3,0,0
+1795068223747,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,313,491,15,15,http://localhost:3000/api/checkout,6,0,0
+1795068224045,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,453,201,15,15,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068224069,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,294,435,15,15,http://localhost:3000/api/cart,2,0,0
+1795068224093,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,294,425,15,15,http://localhost:3000/api/cart,3,0,0
+1795068224224,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,480,189,15,15,http://localhost:3000/api/products/2,2,0,0
+1795068224240,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,294,435,15,15,http://localhost:3000/api/cart,3,0,0
+1795068224261,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,294,425,15,15,http://localhost:3000/api/cart,3,0,0
+1795068224451,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,4,0,0
+1795068224455,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,480,202,15,15,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068224466,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,313,491,15,15,http://localhost:3000/api/checkout,5,0,0
+1795068224535,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,451,189,15,15,http://localhost:3000/api/products/1,2,0,0
+1795068224549,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,5,0,0
+1795068224633,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,6,0,0
+1795068224703,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,3,0,0
+1795068224732,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068224821,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,4,0,0
+1795068225051,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068225103,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,480,189,15,15,http://localhost:3000/api/products/2,3,0,0
+1795068225134,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,3,0,0
+1795068225165,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068225285,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,294,435,15,15,http://localhost:3000/api/cart,3,0,0
+1795068225350,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,317,307,15,15,http://localhost:3000/api/register,5,0,2
+1795068225473,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,317,310,15,15,http://localhost:3000/api/register,3,0,0
+1795068225593,2,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,317,310,15,15,http://localhost:3000/api/register,2,0,1
+1795068225610,0,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,451,189,15,15,http://localhost:3000/api/products/1,0,0,0
+1795068225713,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,313,487,15,15,http://localhost:3000/api/checkout,3,0,0
+1795068225787,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,2,0,0
+1795068225931,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,294,428,15,15,http://localhost:3000/api/cart,3,0,0
+1795068226359,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,6,0,0
+1795068226440,9,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,294,428,15,15,http://localhost:3000/api/cart,9,0,0
+1795068226434,16,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,313,491,15,15,http://localhost:3000/api/checkout,16,0,0
+1795068226564,8,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,313,487,15,15,http://localhost:3000/api/checkout,8,0,0
+1795068226618,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,313,491,15,15,http://localhost:3000/api/checkout,3,0,0
+1795068226636,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,669,280,15,15,http://localhost:3000/api/login,5,0,0
+1795068226672,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,313,491,15,15,http://localhost:3000/api/checkout,3,0,0
+1795068226699,6,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,671,281,15,15,http://localhost:3000/api/login,6,0,0
+1795068226803,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,671,281,15,15,http://localhost:3000/api/login,5,0,0
+1795068226914,16,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,317,310,15,15,http://localhost:3000/api/register,16,0,4
+1795068226954,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,3,0,0
+1795068227003,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,313,491,15,15,http://localhost:3000/api/checkout,4,0,0
+1795068227044,8,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,401,266,15,15,http://localhost:3000/api/apply-coupon,8,0,0
+1795068227058,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,294,435,15,15,http://localhost:3000/api/cart,1,0,0
+1795068227152,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,3,0,0
+1795068227353,12,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-6",text,true,,295,386,15,15,http://localhost:3000/api/coupon-usage,12,0,0
+1795068227607,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,313,491,14,14,http://localhost:3000/api/checkout,4,0,0
+1795068227636,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,313,491,14,14,http://localhost:3000/api/checkout,3,0,0
+1795068227714,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,671,281,14,14,http://localhost:3000/api/login,2,0,0
+1795068227734,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,401,266,14,14,http://localhost:3000/api/apply-coupon,2,0,0
+1795068227810,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,313,487,14,14,http://localhost:3000/api/checkout,4,0,0
+1795068227819,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,453,201,14,14,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068227930,26,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,26,0,0
+1795068228018,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,202,14,14,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068228044,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,401,266,14,14,http://localhost:3000/api/apply-coupon,2,0,0
+1795068228287,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,4,0,0
+1795068228306,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,450,202,14,14,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068228362,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,4,0,0
+1795068228472,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,3,0,0
+1795068228554,8,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,317,310,14,14,http://localhost:3000/api/register,8,0,2
+1795068228593,5,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,450,202,14,14,http://localhost:3000/api/products?search=MacBook,5,0,0
+1795068228630,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,189,14,14,http://localhost:3000/api/products/2,1,0,0
+1795068228638,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,451,189,14,14,http://localhost:3000/api/products/1,3,0,0
+1795068228837,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,5,0,0
+1795068229094,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,313,487,14,14,http://localhost:3000/api/checkout,4,0,0
+1795068229115,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,4,0,0
+1795068229154,9,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,8,0,0
+1795068229180,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,448,189,14,14,http://localhost:3000/api/products/3,3,0,0
+1795068229198,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,317,310,14,14,http://localhost:3000/api/register,3,0,1
+1795068229244,2,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,313,491,14,14,http://localhost:3000/api/checkout,2,0,0
+1795068229272,1,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,671,281,14,14,http://localhost:3000/api/login,1,0,0
+1795068229378,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,294,435,14,14,http://localhost:3000/api/cart,2,0,0
+1795068229639,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-8",text,true,,295,386,14,14,http://localhost:3000/api/coupon-usage,3,0,0
+1795068229661,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,448,189,13,13,http://localhost:3000/api/products/3,2,0,0
+1795068229810,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,317,307,13,13,http://localhost:3000/api/register,3,0,0
+1795068229861,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,453,201,13,13,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068229927,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,317,310,13,13,http://localhost:3000/api/register,4,0,1
+1795068229998,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,317,310,13,13,http://localhost:3000/api/register,3,0,1
+1795068230315,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,671,281,13,13,http://localhost:3000/api/login,5,0,0
+1795068230337,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,317,310,13,13,http://localhost:3000/api/register,5,0,1
+1795068230457,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,294,428,13,13,http://localhost:3000/api/cart,3,0,0
+1795068230484,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,295,386,13,13,http://localhost:3000/api/coupon-usage,4,0,0
+1795068230544,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,317,307,13,13,http://localhost:3000/api/register,3,0,1
+1795068230693,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,3,0,0
+1795068230782,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,317,310,13,13,http://localhost:3000/api/register,3,0,1
+1795068230911,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,294,425,13,13,http://localhost:3000/api/cart,2,0,0
+1795068231074,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,3,0,0
+1795068231217,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,294,425,13,13,http://localhost:3000/api/cart,3,0,0
+1795068231398,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,669,280,13,13,http://localhost:3000/api/login,4,0,0
+1795068231420,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,671,281,13,13,http://localhost:3000/api/login,2,0,0
+1795068231435,0,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,480,202,13,13,http://localhost:3000/api/products?search=Samsung,0,0,0
+1795068231459,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,451,189,13,13,http://localhost:3000/api/products/1,1,0,0
+1795068231463,1,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,671,281,13,13,http://localhost:3000/api/login,1,0,0
+1795068231498,1,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,671,281,13,13,http://localhost:3000/api/login,1,0,0
+1795068231817,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,671,281,13,13,http://localhost:3000/api/login,2,0,0
+1795068231888,2,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,313,491,13,13,http://localhost:3000/api/checkout,2,0,0
+1795068232107,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,453,201,13,13,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068232125,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,317,310,13,13,http://localhost:3000/api/register,5,0,1
+1795068232175,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,669,280,13,13,http://localhost:3000/api/login,4,0,0
+1795068232432,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,313,487,13,13,http://localhost:3000/api/checkout,5,0,0
+1795068232460,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,453,201,13,13,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068232578,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,294,428,13,13,http://localhost:3000/api/cart,5,0,0
+1795068232789,7,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,7,0,0
+1795068232825,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,671,281,13,13,http://localhost:3000/api/login,2,0,0
+1795068232875,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,480,189,13,13,http://localhost:3000/api/products/2,1,0,0
+1795068232881,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,2,0,0
+1795068233097,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,480,202,13,13,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068233137,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,450,202,13,13,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068233288,6,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,401,266,13,13,http://localhost:3000/api/apply-coupon,6,0,0
+1795068233346,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,450,202,13,13,http://localhost:3000/api/products?search=MacBook,3,0,0
+1795068233453,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-7",text,true,,295,386,13,13,http://localhost:3000/api/coupon-usage,5,0,0
+1795068233590,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,480,202,12,12,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068233614,8,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,8,0,0
+1795068233628,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,294,435,12,12,http://localhost:3000/api/cart,2,0,0
+1795068233896,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,451,189,12,12,http://localhost:3000/api/products/1,2,0,0
+1795068234000,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,480,189,12,12,http://localhost:3000/api/products/2,2,0,0
+1795068234186,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,313,491,12,12,http://localhost:3000/api/checkout,6,0,0
+1795068234234,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,450,202,12,12,http://localhost:3000/api/products?search=MacBook,3,0,0
+1795068234331,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,480,189,12,12,http://localhost:3000/api/products/2,2,0,0
+1795068234447,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,451,189,12,12,http://localhost:3000/api/products/1,4,0,0
+1795068234464,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,313,487,12,12,http://localhost:3000/api/checkout,6,0,0
+1795068234597,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,448,189,12,12,http://localhost:3000/api/products/3,3,0,0
+1795068234673,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,3,0,0
+1795068234752,2,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,313,491,12,12,http://localhost:3000/api/checkout,2,0,0
+1795068234934,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,317,310,12,12,http://localhost:3000/api/register,3,0,1
+1795068235024,5,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,448,189,12,12,http://localhost:3000/api/products/3,5,0,0
+1795068235159,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,294,425,12,12,http://localhost:3000/api/cart,3,0,0
+1795068235188,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,448,189,12,12,http://localhost:3000/api/products/3,2,0,0
+1795068235384,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,294,435,12,12,http://localhost:3000/api/cart,2,0,0
+1795068235774,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,294,428,12,12,http://localhost:3000/api/cart,2,0,0
+1795068235811,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,671,281,12,12,http://localhost:3000/api/login,4,0,0
+1795068235880,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,3,0,0
+1795068235918,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,294,435,12,12,http://localhost:3000/api/cart,4,0,0
+1795068236018,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,5,0,0
+1795068236027,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,5,0,0
+1795068236047,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,294,425,12,12,http://localhost:3000/api/cart,5,0,0
+1795068236160,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,294,428,12,12,http://localhost:3000/api/cart,4,0,0
+1795068236434,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,313,491,12,12,http://localhost:3000/api/checkout,4,0,0
+1795068236593,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,4,0,0
+1795068236790,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,3,0,0
+1795068236880,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,4,0,0
+1795068236881,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,317,310,12,12,http://localhost:3000/api/register,6,0,1
+1795068236907,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,294,425,12,12,http://localhost:3000/api/cart,1,0,0
+1795068236939,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,2,0,0
+1795068236982,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,317,310,12,12,http://localhost:3000/api/register,4,0,1
+1795068237133,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,453,201,12,12,http://localhost:3000/api/products?search=iPhone,3,0,0
+1795068237402,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,671,281,12,12,http://localhost:3000/api/login,5,0,0
+1795068237466,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,313,491,12,12,http://localhost:3000/api/checkout,6,0,0
+1795068237556,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,3,0,0
+1795068237776,15,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,313,491,12,12,http://localhost:3000/api/checkout,15,0,0
+1795068237777,15,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,317,310,12,12,http://localhost:3000/api/register,15,0,10
+1795068237787,6,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,6,0,0
+1795068237880,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,401,266,12,12,http://localhost:3000/api/apply-coupon,4,0,0
+1795068237963,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,6,0,0
+1795068238279,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,313,487,12,12,http://localhost:3000/api/checkout,4,0,0
+1795068238297,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,451,189,12,12,http://localhost:3000/api/products/1,1,0,0
+1795068238337,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,480,202,12,12,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068238342,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,3,0,0
+1795068238446,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,313,491,12,12,http://localhost:3000/api/checkout,6,0,0
+1795068238448,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,313,487,12,12,http://localhost:3000/api/checkout,6,0,0
+1795068238555,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-10",text,true,,295,386,12,12,http://localhost:3000/api/coupon-usage,5,0,0
+1795068238585,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,317,310,11,11,http://localhost:3000/api/register,6,0,1
+1795068238700,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,313,491,11,11,http://localhost:3000/api/checkout,7,0,0
+1795068238814,11,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,671,281,11,11,http://localhost:3000/api/login,11,0,0
+1795068238855,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,671,281,11,11,http://localhost:3000/api/login,3,0,0
+1795068238890,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,317,310,11,11,http://localhost:3000/api/register,5,0,1
+1795068239370,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,313,491,11,11,http://localhost:3000/api/checkout,6,0,0
+1795068239392,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,671,281,11,11,http://localhost:3000/api/login,3,0,0
+1795068239394,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,295,386,11,11,http://localhost:3000/api/coupon-usage,3,0,0
+1795068239531,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,295,386,11,11,http://localhost:3000/api/coupon-usage,4,0,0
+1795068239589,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,295,386,11,11,http://localhost:3000/api/coupon-usage,6,0,0
+1795068239663,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,453,201,11,11,http://localhost:3000/api/products?search=iPhone,1,0,0
+1795068239687,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,450,202,11,11,http://localhost:3000/api/products?search=MacBook,1,0,0
+1795068239734,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-9",text,true,,295,386,11,11,http://localhost:3000/api/coupon-usage,4,0,0
+1795068239809,13,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,671,281,10,10,http://localhost:3000/api/login,13,0,0
+1795068240134,5,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,480,189,10,10,http://localhost:3000/api/products/2,5,0,0
+1795068240134,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,295,386,10,10,http://localhost:3000/api/coupon-usage,6,0,0
+1795068240164,1,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,294,428,10,10,http://localhost:3000/api/cart,1,0,0
+1795068240244,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,448,189,10,10,http://localhost:3000/api/products/3,1,0,0
+1795068240525,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,317,310,10,10,http://localhost:3000/api/register,4,0,1
+1795068240807,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,2,0,0
+1795068240861,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,450,202,10,10,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068240878,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,317,310,10,10,http://localhost:3000/api/register,3,0,1
+1795068241000,4,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,317,310,10,10,http://localhost:3000/api/register,4,0,0
+1795068241171,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,294,435,10,10,http://localhost:3000/api/cart,3,0,0
+1795068241176,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,451,189,10,10,http://localhost:3000/api/products/1,1,0,0
+1795068241364,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,480,202,10,10,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068241520,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,317,310,10,10,http://localhost:3000/api/register,5,0,2
+1795068242079,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,294,425,10,10,http://localhost:3000/api/cart,4,0,0
+1795068242211,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,671,281,10,10,http://localhost:3000/api/login,4,0,0
+1795068242213,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,313,487,10,10,http://localhost:3000/api/checkout,6,0,0
+1795068242375,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,448,189,10,10,http://localhost:3000/api/products/3,2,0,0
+1795068242512,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,671,281,10,10,http://localhost:3000/api/login,3,0,0
+1795068242619,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,671,281,10,10,http://localhost:3000/api/login,4,0,0
+1795068242735,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,294,428,10,10,http://localhost:3000/api/cart,3,0,0
+1795068242854,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,671,281,10,10,http://localhost:3000/api/login,3,0,0
+1795068242856,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,3,0,0
+1795068243328,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,480,189,10,10,http://localhost:3000/api/products/2,2,0,0
+1795068243434,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,4,0,0
+1795068243502,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,453,201,10,10,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068243538,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,295,386,10,10,http://localhost:3000/api/coupon-usage,5,0,0
+1795068243834,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,480,202,10,10,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068243942,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,294,425,10,10,http://localhost:3000/api/cart,4,0,0
+1795068243987,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,450,202,10,10,http://localhost:3000/api/products?search=MacBook,3,0,0
+1795068244193,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,3,0,0
+1795068244323,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,313,491,10,10,http://localhost:3000/api/checkout,4,0,0
+1795068244651,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,480,189,10,10,http://localhost:3000/api/products/2,3,0,0
+1795068244726,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,451,189,10,10,http://localhost:3000/api/products/1,3,0,0
+1795068244855,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,453,201,10,10,http://localhost:3000/api/products?search=iPhone,1,0,0
+1795068244909,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,294,435,10,10,http://localhost:3000/api/cart,2,0,0
+1795068245190,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,313,491,10,10,http://localhost:3000/api/checkout,6,0,0
+1795068245252,5,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,317,310,10,10,http://localhost:3000/api/register,5,0,2
+1795068245411,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,294,435,10,10,http://localhost:3000/api/cart,4,0,0
+1795068245417,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,451,189,10,10,http://localhost:3000/api/products/1,2,0,0
+1795068245412,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,313,487,10,10,http://localhost:3000/api/checkout,7,0,0
+1795068245585,4,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,448,189,10,10,http://localhost:3000/api/products/3,4,0,0
+1795068245794,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,401,266,10,10,http://localhost:3000/api/apply-coupon,2,0,0
+1795068245865,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-12",text,true,,295,386,10,10,http://localhost:3000/api/coupon-usage,2,0,0
+1795068246117,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,294,428,9,9,http://localhost:3000/api/cart,5,0,0
+1795068246545,6,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-11",text,true,,295,386,9,9,http://localhost:3000/api/coupon-usage,6,0,0
+1795068246796,7,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,295,386,8,8,http://localhost:3000/api/coupon-usage,7,0,0
+1795068246849,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,401,266,8,8,http://localhost:3000/api/apply-coupon,4,0,0
+1795068247050,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,671,281,8,8,http://localhost:3000/api/login,5,0,0
+1795068247095,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,401,266,8,8,http://localhost:3000/api/apply-coupon,2,0,0
+1795068247143,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,294,425,8,8,http://localhost:3000/api/cart,3,0,0
+1795068247197,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,294,428,8,8,http://localhost:3000/api/cart,2,0,0
+1795068247392,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,401,266,8,8,http://localhost:3000/api/apply-coupon,2,0,0
+1795068247416,10,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,313,491,8,8,http://localhost:3000/api/checkout,10,0,0
+1795068247814,9,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,317,310,8,8,http://localhost:3000/api/register,9,0,2
+1795068247868,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,313,491,8,8,http://localhost:3000/api/checkout,6,0,0
+1795068247894,12,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,313,487,8,8,http://localhost:3000/api/checkout,12,0,0
+1795068248048,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,401,266,8,8,http://localhost:3000/api/apply-coupon,2,0,0
+1795068248414,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-13",text,true,,295,386,8,8,http://localhost:3000/api/coupon-usage,2,0,0
+1795068248837,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,401,266,7,7,http://localhost:3000/api/apply-coupon,4,0,0
+1795068248869,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,295,386,7,7,http://localhost:3000/api/coupon-usage,2,0,0
+1795068248904,1,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,202,7,7,http://localhost:3000/api/products?search=Samsung,1,0,0
+1795068248905,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,295,386,7,7,http://localhost:3000/api/coupon-usage,2,0,0
+1795068248942,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,313,487,7,7,http://localhost:3000/api/checkout,4,0,0
+1795068248963,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,313,491,7,7,http://localhost:3000/api/checkout,3,0,0
+1795068249066,3,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,671,281,7,7,http://localhost:3000/api/login,3,0,0
+1795068249410,5,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,313,491,7,7,http://localhost:3000/api/checkout,5,0,0
+1795068249777,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,450,202,7,7,http://localhost:3000/api/products?search=MacBook,2,0,0
+1795068249885,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-14",text,true,,295,386,7,7,http://localhost:3000/api/coupon-usage,4,0,0
+1795068249901,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,317,310,6,6,http://localhost:3000/api/register,3,0,1
+1795068250121,2,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,317,310,6,6,http://localhost:3000/api/register,2,0,0
+1795068250326,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,480,189,6,6,http://localhost:3000/api/products/2,1,0,0
+1795068250491,3,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,295,386,6,6,http://localhost:3000/api/coupon-usage,3,0,0
+1795068250537,2,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,295,386,6,6,http://localhost:3000/api/coupon-usage,2,0,0
+1795068250808,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,671,281,6,6,http://localhost:3000/api/login,4,0,0
+1795068250900,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,448,189,6,6,http://localhost:3000/api/products/3,3,0,0
+1795068250968,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,294,435,6,6,http://localhost:3000/api/cart,4,0,0
+1795068251110,2,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,317,310,6,6,http://localhost:3000/api/register,2,0,0
+1795068251367,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,671,281,6,6,http://localhost:3000/api/login,4,0,0
+1795068251721,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,480,202,6,6,http://localhost:3000/api/products?search=Samsung,3,0,0
+1795068251923,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,671,281,6,6,http://localhost:3000/api/login,2,0,0
+1795068252103,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,294,425,6,6,http://localhost:3000/api/cart,2,0,0
+1795068252135,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,317,310,6,6,http://localhost:3000/api/register,3,0,1
+1795068252177,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,401,266,6,6,http://localhost:3000/api/apply-coupon,2,0,0
+1795068252514,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,453,201,6,6,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068253290,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,671,281,6,6,http://localhost:3000/api/login,4,0,0
+1795068253390,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,313,491,6,6,http://localhost:3000/api/checkout,4,0,0
+1795068253541,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,401,266,6,6,http://localhost:3000/api/apply-coupon,5,0,0
+1795068253554,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,451,189,6,6,http://localhost:3000/api/products/1,2,0,0
+1795068253586,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,480,189,6,6,http://localhost:3000/api/products/2,3,0,0
+1795068253864,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,453,201,6,6,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068254431,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,313,491,6,6,http://localhost:3000/api/checkout,7,0,0
+1795068254697,3,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,294,428,6,6,http://localhost:3000/api/cart,3,0,0
+1795068254823,3,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,450,202,6,6,http://localhost:3000/api/products?search=MacBook,3,0,0
+1795068254855,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-15",text,true,,295,386,6,6,http://localhost:3000/api/coupon-usage,5,0,0
+1795068255173,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,294,435,5,5,http://localhost:3000/api/cart,5,0,0
+1795068255217,4,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,401,266,5,5,http://localhost:3000/api/apply-coupon,4,0,0
+1795068255296,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,295,386,5,5,http://localhost:3000/api/coupon-usage,5,0,0
+1795068255362,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,448,189,5,5,http://localhost:3000/api/products/3,1,0,0
+1795068255574,1,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,451,189,5,5,http://localhost:3000/api/products/1,1,0,0
+1795068255791,2,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,313,487,5,5,http://localhost:3000/api/checkout,2,0,0
+1795068256188,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,294,428,5,5,http://localhost:3000/api/cart,2,0,0
+1795068256507,5,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,294,425,5,5,http://localhost:3000/api/cart,5,0,0
+1795068256636,1,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,401,266,5,5,http://localhost:3000/api/apply-coupon,1,0,0
+1795068257220,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,318,310,5,5,http://localhost:3000/api/register,6,0,3
+1795068257348,9,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,295,386,5,5,http://localhost:3000/api/coupon-usage,8,0,0
+1795068257694,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,313,491,5,5,http://localhost:3000/api/checkout,6,0,0
+1795068257826,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,401,266,5,5,http://localhost:3000/api/apply-coupon,2,0,0
+1795068257946,2,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,401,266,5,5,http://localhost:3000/api/apply-coupon,2,0,0
+1795068258047,3,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,318,310,5,5,http://localhost:3000/api/register,3,0,1
+1795068258585,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-17",text,true,,295,386,5,5,http://localhost:3000/api/coupon-usage,5,0,0
+1795068258643,7,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,313,491,4,4,http://localhost:3000/api/checkout,7,0,0
+1795068258679,2,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,673,281,4,4,http://localhost:3000/api/login,2,0,0
+1795068258948,8,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,313,487,4,4,http://localhost:3000/api/checkout,8,0,0
+1795068259276,4,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,673,281,4,4,http://localhost:3000/api/login,4,0,0
+1795068259560,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,480,202,4,4,http://localhost:3000/api/products?search=Samsung,2,0,0
+1795068260059,7,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-16",text,true,,295,386,4,4,http://localhost:3000/api/coupon-usage,7,0,0
+1795068260638,4,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,295,386,3,3,http://localhost:3000/api/coupon-usage,4,0,0
+1795068261185,4,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,450,202,3,3,http://localhost:3000/api/products?search=MacBook,4,0,0
+1795068261296,2,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,480,189,3,3,http://localhost:3000/api/products/2,2,0,0
+1795068261895,6,01 Auth - Register,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,318,310,3,3,http://localhost:3000/api/register,6,0,3
+1795068262193,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,294,436,3,3,http://localhost:3000/api/cart,2,0,0
+1795068262936,5,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,448,189,3,3,http://localhost:3000/api/products/3,5,0,0
+1795068262936,5,02 Auth - Login,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,673,281,3,3,http://localhost:3000/api/login,5,0,0
+1795068263482,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,401,267,3,3,http://localhost:3000/api/apply-coupon,3,0,0
+1795068263491,2,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,294,426,3,3,http://localhost:3000/api/cart,2,0,0
+1795068264269,2,03 Read - Search Products,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,453,201,3,3,http://localhost:3000/api/products?search=iPhone,2,0,0
+1795068264468,3,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,401,267,3,3,http://localhost:3000/api/apply-coupon,3,0,0
+1795068264580,6,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,313,492,3,3,http://localhost:3000/api/checkout,6,0,0
+1795068265266,3,04 Read - Product Detail,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,451,189,3,3,http://localhost:3000/api/products/1,3,0,0
+1795068265684,3,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,313,492,3,3,http://localhost:3000/api/checkout,3,0,0
+1795068266533,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-18",text,true,,295,387,3,3,http://localhost:3000/api/coupon-usage,5,0,0
+1795068266925,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-19",text,true,,295,387,2,2,http://localhost:3000/api/coupon-usage,5,0,0
+1795068267185,4,05 Transaction - Add to Cart,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,294,429,1,1,http://localhost:3000/api/cart,4,0,0
+1795068268187,5,06 Transaction - Apply Coupon,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,401,267,1,1,http://localhost:3000/api/apply-coupon,5,0,0
+1795068269556,4,07 Transaction - Checkout,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,314,488,1,1,http://localhost:3000/api/checkout,4,0,0
+1795068270690,5,08 Transaction - Record Coupon Usage,200,OK,"Load - 20 users, 60s ramp, 5 iterations 1-20",text,true,,295,387,1,1,http://localhost:3000/api/coupon-usage,5,0,0

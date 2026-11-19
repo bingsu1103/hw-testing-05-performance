@@ -1,0 +1,12 @@
+scenario=Stress
+plan=/Users/ngogiaan1103/Documents/ChatGPT/hw-testing-05/test-plans/23120205_Stress_20261119.jmx
+plan_sha256=b3e1f992c7a18a3e249701160849be76919d25ddde1ef75c1571e4607b15dba6
+test_assets_commit=a7cbb8347518a542f01ae5500caa7943b5bca47c
+sut_commit=85af3ba875c88283615e22cb108f13e2fccaf0e9
+hostname=my-mac
+timezone=+07
+started_at=2026-11-19T13:04:50+07:00
+jmeter_version=5.6.3
+java_version=openjdk version "25.0.5" 2026-10-20 LTS
+database_reset=git restore backend/database.sqlite
+finished_at=2026-11-19T13:08:37+07:00

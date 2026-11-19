@@ -1,0 +1,12 @@
+scenario=Soak
+plan=/Users/ngogiaan1103/Documents/ChatGPT/hw-testing-05/test-plans/23120205_Soak_20261119.jmx
+plan_sha256=8a2334663c23b1b4e597cb29a17a80d847a6f50d88457773e278e7e9d2e5170b
+test_assets_commit=a7cbb8347518a542f01ae5500caa7943b5bca47c
+sut_commit=85af3ba875c88283615e22cb108f13e2fccaf0e9
+hostname=my-mac
+timezone=+07
+started_at=2026-11-19T15:24:07+07:00
+jmeter_version=5.6.3
+java_version=openjdk version "25.0.5" 2026-10-20 LTS
+database_reset=git restore backend/database.sqlite
+finished_at=2026-11-19T15:36:23+07:00
