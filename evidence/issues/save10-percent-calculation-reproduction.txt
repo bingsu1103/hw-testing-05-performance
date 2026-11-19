@@ -1,0 +1,14 @@
+Reproduced at: 2026-11-19T15:38:03+07:00
+SUT commit: 85af3ba875c88283615e22cb108f13e2fccaf0e9
+Flow 2 steps exercised: register -> login -> search -> detail -> cart -> apply coupon
+Registered user ID: 3 (email and token omitted)
+Search result count: 1
+Product detail ID/price: {"id":1,"price":30000000}
+Coupon seed: SAVE10, type=percent, discount_value=10
+Original total: 30000000
+Expected 10% discount: 3000000
+Expected final amount: 27000000
+Actual response: {"success":true,"coupon_id":1,"discount_amount":-270000000,"final_amount":300000000,"message":"Áp dụng thành công! Giảm 10%"}
+Actual discount: -270000000
+Actual final amount: 300000000
+Result: percentage coupon is calculated as total * (1 - 10), producing a negative discount and inflated final amount.
