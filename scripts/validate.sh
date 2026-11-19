@@ -17,7 +17,7 @@ for plan in "${expected_plans[@]}"; do
 done
 
 header="$(head -n 1 data/users.csv)"
-expected_header="email,password,search,product_id,product_name,product_price,quantity,total_amount,shipping_address"
+expected_header="name_prefix,password,search,product_id,product_name,product_price,quantity,total_amount,coupon_code,expected_final_amount,shipping_address"
 if [[ "$header" != "$expected_header" ]]; then
   echo "Unexpected CSV header: $header" >&2
   exit 65
@@ -28,11 +28,14 @@ grep -q 'SummaryReport.*Stress View - Summary Report' test-plans/23120205_Stress
 grep -q 'StatVisualizer.*Spike View - Aggregate Report' test-plans/23120205_Spike_20261117.jmx
 
 endpoints=(
+  "/api/register"
   "/api/login"
   "/api/products"
   "/api/products/\${product_id}"
   "/api/cart"
+  "/api/apply-coupon"
   "/api/checkout"
+  "/api/coupon-usage"
 )
 for endpoint in "${endpoints[@]}"; do
   for plan in "${expected_plans[@]}"; do
@@ -41,7 +44,7 @@ for endpoint in "${endpoints[@]}"; do
 done
 
 shellcheck scripts/*.sh
-python3 -m py_compile scripts/analyze_jtl.py scripts/analyze_resources.py tests/test_analyze_jtl.py
+python3 -m py_compile scripts/analyze_jtl.py scripts/analyze_resources.py tests/test_analyze_jtl.py tests/test_flow2_scope.py
 python3 -m unittest discover -s tests -v
 echo "Static validation passed for 4 JMeter plans, CSV data, endpoint coverage, scripts, and analyzer tests."
 
