@@ -13,8 +13,8 @@ case "$scenario" in
   *) echo "Usage: $0 {load|stress|spike|soak}" >&2; exit 64 ;;
 esac
 
-plan="${repo_dir}/test-plans/23120205_${label}_20261117.jmx"
-stem="23120205_${label}_20261117"
+plan="${repo_dir}/test-plans/23120205_${label}_20261119.jmx"
+stem="23120205_${label}_20261119"
 jtl="${repo_dir}/results/${stem}.jtl"
 jmeter_log="${repo_dir}/results/${stem}.log"
 backend_log="${repo_dir}/results/${stem}_backend.log"

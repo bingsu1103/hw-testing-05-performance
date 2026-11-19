@@ -5,10 +5,10 @@ repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 scenario="${1:-}"
 
 case "$scenario" in
-  load) plan="23120205_Load_20261117.jmx" ;;
-  stress) plan="23120205_Stress_20261117.jmx" ;;
-  spike) plan="23120205_Spike_20261117.jmx" ;;
-  soak) plan="23120205_Soak_20261117.jmx" ;;
+  load) plan="23120205_Load_20261119.jmx" ;;
+  stress) plan="23120205_Stress_20261119.jmx" ;;
+  spike) plan="23120205_Spike_20261119.jmx" ;;
+  soak) plan="23120205_Soak_20261119.jmx" ;;
   *)
     echo "Usage: $0 {load|stress|spike|soak}" >&2
     exit 64

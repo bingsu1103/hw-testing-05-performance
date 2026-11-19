@@ -42,7 +42,7 @@ done
 find "${package_root}" -name '.DS_Store' -delete
 find "${package_root}" -type d -name '__pycache__' -prune -exec rm -rf {} +
 rm -rf "${package_root}/evidence/discarded"
-find "${package_root}/results" -type f ! -name '23120205_*_20261117.jtl' ! -name '23120205_*_20261117.log' -delete
+find "${package_root}/results" -type f ! -name '23120205_*_20261119.jtl' ! -name '23120205_*_20261119.log' -delete
 
 (
   cd "${stage_dir}"

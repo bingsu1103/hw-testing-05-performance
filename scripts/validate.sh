@@ -5,10 +5,10 @@ repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$repo_dir"
 
 expected_plans=(
-  "test-plans/23120205_Load_20261117.jmx"
-  "test-plans/23120205_Stress_20261117.jmx"
-  "test-plans/23120205_Spike_20261117.jmx"
-  "test-plans/23120205_Soak_20261117.jmx"
+  "test-plans/23120205_Load_20261119.jmx"
+  "test-plans/23120205_Stress_20261119.jmx"
+  "test-plans/23120205_Spike_20261119.jmx"
+  "test-plans/23120205_Soak_20261119.jmx"
 )
 
 for plan in "${expected_plans[@]}"; do
@@ -23,9 +23,9 @@ if [[ "$header" != "$expected_header" ]]; then
   exit 65
 fi
 
-grep -q 'ViewResultsFullVisualizer.*Load View - View Results Tree' test-plans/23120205_Load_20261117.jmx
-grep -q 'SummaryReport.*Stress View - Summary Report' test-plans/23120205_Stress_20261117.jmx
-grep -q 'StatVisualizer.*Spike View - Aggregate Report' test-plans/23120205_Spike_20261117.jmx
+grep -q 'ViewResultsFullVisualizer.*Load View - View Results Tree' test-plans/23120205_Load_20261119.jmx
+grep -q 'SummaryReport.*Stress View - Summary Report' test-plans/23120205_Stress_20261119.jmx
+grep -q 'StatVisualizer.*Spike View - Aggregate Report' test-plans/23120205_Spike_20261119.jmx
 
 endpoints=(
   "/api/register"

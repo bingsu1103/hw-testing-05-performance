@@ -151,7 +151,7 @@ def main() -> int:
                 story.append(PageBreak())
                 story.append(Paragraph("Measured scenario evidence", styles["H1"]))
                 for scenario in ("Load", "Stress", "Spike", "Soak"):
-                    path = ROOT / "evidence" / "screenshots" / f"23120205_{scenario}_20261117_evidence.png"
+                    path = ROOT / "evidence" / "screenshots" / f"23120205_{scenario}_20261119_evidence.png"
                     story.append(KeepTogether([
                         Image(str(path), width=176 * mm, height=110 * mm),
                         Paragraph(f"Figure: {scenario} raw-JTL/resource summary.", styles["Caption"]),

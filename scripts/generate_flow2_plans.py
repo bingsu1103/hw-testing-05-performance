@@ -275,7 +275,7 @@ def render_plan(scenario: Scenario) -> str:
 def main() -> int:
     output_dir = ROOT / "test-plans"
     for scenario in SCENARIOS:
-        path = output_dir / f"23120205_{scenario.name}_20261117.jmx"
+        path = output_dir / f"23120205_{scenario.name}_20261119.jmx"
         path.write_text(render_plan(scenario), encoding="utf-8")
         print(path)
     return 0

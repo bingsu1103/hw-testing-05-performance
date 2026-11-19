@@ -49,10 +49,10 @@
 
 **Files:**
 - Modify: `data/users.csv`
-- Modify: `test-plans/23120205_Load_20261117.jmx`
-- Modify: `test-plans/23120205_Stress_20261117.jmx`
-- Modify: `test-plans/23120205_Spike_20261117.jmx`
-- Modify: `test-plans/23120205_Soak_20261117.jmx`
+- Modify: `test-plans/23120205_Load_20261119.jmx`
+- Modify: `test-plans/23120205_Stress_20261119.jmx`
+- Modify: `test-plans/23120205_Spike_20261119.jmx`
+- Modify: `test-plans/23120205_Soak_20261119.jmx`
 - Modify: `docs/SCENARIO_DESIGN.md`
 - Modify: `docs/REQUIREMENTS_TRACEABILITY.md`
 - Modify: `docs/RUNBOOK.md`
@@ -71,8 +71,8 @@
 ### Task 3: Replace stale Flow 1 evidence with real Flow 2 execution
 
 **Files:**
-- Replace: `results/23120205_*_20261117.{jtl,log}`
-- Replace: `reports/23120205_*_20261117/`
+- Replace: `results/23120205_*_20261119.{jtl,log}`
+- Replace: `reports/23120205_*_20261119/`
 - Replace: `evidence/analysis/`, `evidence/resource-metrics/`, `evidence/run-metadata/`, `evidence/screenshots/`
 - Modify: `scripts/run-evidence-scenario.sh`
 

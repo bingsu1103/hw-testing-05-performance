@@ -5,7 +5,13 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PLANS = sorted((ROOT / "test-plans").glob("23120205_*_20261117.jmx"))
+EXPECTED_PLAN_NAMES = [
+    "23120205_Load_20261119.jmx",
+    "23120205_Soak_20261119.jmx",
+    "23120205_Spike_20261119.jmx",
+    "23120205_Stress_20261119.jmx",
+]
+PLANS = [ROOT / "test-plans" / name for name in EXPECTED_PLAN_NAMES]
 
 EXPECTED_CSV_HEADER = [
     "name_prefix",
@@ -52,6 +58,7 @@ class Flow2ScopeTests(unittest.TestCase):
         self.assertEqual(len(PLANS), 4)
         for plan in PLANS:
             with self.subTest(plan=plan.name):
+                self.assertTrue(plan.is_file())
                 self.assertEqual(sampler_flow(plan), EXPECTED_FLOW)
 
     def test_plans_extract_and_reuse_flow2_state(self):

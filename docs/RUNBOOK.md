@@ -19,7 +19,7 @@ Confirm `http://localhost:3000/api/products` returns JSON.
 
 ```bash
 ./scripts/validate.sh
-jmeter -n -t test-plans/23120205_Load_20261117.jmx \
+jmeter -n -t test-plans/23120205_Load_20261119.jmx \
   -Jthreads=1 -Jramp_seconds=1 -Jloops=1 \
   -Jcsv_file="$PWD/data/users.csv" \
   -l results/smoke.jtl

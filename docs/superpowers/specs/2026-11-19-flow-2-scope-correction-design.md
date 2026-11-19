@@ -29,7 +29,7 @@ The web client also records coupon usage after checkout. That call is treated as
 
 ## Constraints
 
-- Required plan names remain `23120205_{Load,Stress,Spike}_20261117.jmx`; the Soak plan remains supporting evidence.
+- Required plan names use the real correction date: `23120205_{Load,Stress,Spike}_20261119.jmx`; the Soak plan remains supporting evidence.
 - Load, Stress, and Spike retain distinct JMeter listener types.
 - Real JTL, HTML report, and resource evidence must be regenerated from a clean tracked SUT database.
 - Previous public issues remain in GitHub history, but the main Flow 2 report references only defects reproduced in the selected flow.

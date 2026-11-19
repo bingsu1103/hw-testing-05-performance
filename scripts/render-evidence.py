@@ -69,7 +69,7 @@ def bars(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int], values: list
 
 def render(scenario: str) -> Path:
     analyzer = load_analyzer()
-    stem = f"23120205_{scenario}_20261117"
+    stem = f"23120205_{scenario}_20261119"
     overall, labels = analyzer.analyze(ROOT / "results" / f"{stem}.jtl")
     with (ROOT / "evidence" / "resource-metrics" / f"{stem}.csv").open(newline="", encoding="utf-8") as stream:
         resource_rows = list(csv.DictReader(stream))
