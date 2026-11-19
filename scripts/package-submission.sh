@@ -45,6 +45,7 @@ rm -rf "${package_root}/evidence/discarded"
 rm -rf "${package_root}/docs/superpowers"
 find "${package_root}/results" -type f ! -name '23120205_*_20261119.jtl' ! -name '23120205_*_20261119.log' -delete
 
+rm -f "${repo_root}/submission/${archive_name}"
 (
   cd "${stage_dir}"
   zip -qr "${repo_root}/submission/${archive_name}" "$(basename "${package_root}")"
