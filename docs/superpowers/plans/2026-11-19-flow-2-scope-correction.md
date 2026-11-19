@@ -120,6 +120,6 @@
 - [x] Recompute every reported metric from the new JTL files.
 - [x] Remove Flow 1 wording, counts, screenshots, and issue links from current deliverables.
 - [x] Rebuild and visually inspect the PDF.
-- [ ] Regenerate the commit log and incomplete ZIP.
-- [ ] Run validators, skill validation, JTL gates, PDF checks, ZIP integrity, and Git status checks.
-- [ ] Commit and push the corrected staged history.
+- [x] Regenerate the commit log and incomplete ZIP.
+- [x] Run validators, skill validation, JTL gates, PDF checks, ZIP integrity, and Git status checks.
+- [x] Commit and push the corrected staged history.
