@@ -1,3 +1,7 @@
+5e4c7bc | 2026-11-20T00:38:22+07:00 | bingsu | docs: rebuild performance report PDF
+2fb2df3 | 2026-11-20T00:36:41+07:00 | bingsu | docs: complete live performance evidence
+80cd0c1 | 2026-11-20T00:07:14+07:00 | bingsu | docs: add live load and hardware evidence
+a7e062b | 2026-11-19T15:48:29+07:00 | bingsu | chore: finalize Flow 2 submission metadata
 79fb568 | 2026-11-19T15:48:17+07:00 | bingsu | fix: rebuild submission archive without stale entries
 db48fae | 2026-11-19T15:48:02+07:00 | bingsu | chore: keep submission package student-facing
 14ef1cb | 2026-11-19T15:47:36+07:00 | bingsu | chore: record Flow 2 correction progress
