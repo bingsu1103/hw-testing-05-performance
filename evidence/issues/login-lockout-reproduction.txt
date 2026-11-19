@@ -1,8 +1,0 @@
-Reproduced at: 2026-11-17T15:48:05+07:00
-SUT commit: 85af3ba875c88283615e22cb108f13e2fccaf0e9
-Wrong login #1: HTTP 401 {"error":"Invalid email or password"}
-Wrong login #2: HTTP 401 {"error":"Invalid email or password"}
-Valid login immediately after two failures: HTTP 403 {"error":"Tài khoản đã bị khóa. Vui lòng thử lại sau."}
-Valid login after 35 seconds: HTTP 403 {"error":"Tài khoản đã bị khóa. Vui lòng thử lại sau."}
-Expected contract: lock after 3 failures for 30 seconds.
-Result: account locked after 2 failures and remained locked beyond 35 seconds.
